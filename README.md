@@ -1,5 +1,5 @@
-# Django Blog Mini-Project
+# Django Ecommerce project
 
-A simple blog app written using Django.
+An ecommerce project using Django and Python.
 
 [![Build Status](https://travis-ci.org/Deirdre18/ecommerce-django-app.svg?branch=master)](https://travis-ci.org/Deirdre18/ecommerce-django-app)
