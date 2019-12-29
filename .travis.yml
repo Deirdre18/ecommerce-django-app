@@ -1,6 +1,10 @@
+dist: xenial
 language: python
 python:
-    - "3.6"
-install: "pip3 install -r requirements.txt"
+  - 3.7.3 // make sure you change this to the version of python you are using.
+before_install:
+  - chmod +x manage.py
+install:
+  - pip install -r requirements.txt
 script:
-    - SECRET_KEY="whatever" ./manage.py test
+  - SECRET_KEY="whatever" python manage.py test
