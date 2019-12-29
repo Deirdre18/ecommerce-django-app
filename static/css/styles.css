@@ -6,8 +6,8 @@ form {
     border-radius:0;
 }
 
-.navbar-custom .navbar-nav > li > a {
-    color:#fff;
+/*.navbar-custom .navbar-nav > li > a {
+    color:#fff;*/
 }
 
 button {background-color:indigo;
@@ -18,9 +18,9 @@ button {background-color:indigo;
 }
 
 footer {
-    margin-top: 40px;
+    margin-top: 50px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     border-top: 1px solid #ededed;
     background-color:indigo;
     color:#fff
