@@ -1,0 +1,27 @@
+form {
+    width: 50%;
+}
+.navbar-custom {
+    background-color:indigo;
+    border-radius:0;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
+}
+
+button {background-color:indigo;
+        color:#fff;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin-top: 20px;
+}
+
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #ededed;
+    background-color:indigo;
+    color:#fff
+}
