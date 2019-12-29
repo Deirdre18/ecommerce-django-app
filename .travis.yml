@@ -1,8 +1,10 @@
 dist: xenial
 language: python
 python:
-  - 3.6// make sure you change this to the version of python you are using.
-  - 3.6.7 
+  - 3.6
+  - 3.6.7
+  - 3.6.9
+     
 before_install:
   - chmod +x manage.py
 install:
