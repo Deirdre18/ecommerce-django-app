@@ -4,10 +4,10 @@ form {
 .navbar-custom {
     background-color:indigo;
     border-radius:0;
-}
 
-/*.navbar-custom .navbar-nav > li > a {
-    color:#fff;*/
+}
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
 }
 
 button {background-color:indigo;
