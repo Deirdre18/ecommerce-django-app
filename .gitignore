@@ -1,5 +1,5 @@
 *.sqlite3
 *.pyc
 _pycache_/
-.venv_foo/
+.venv_django/
 env.py
