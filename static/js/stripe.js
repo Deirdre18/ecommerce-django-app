@@ -10,7 +10,7 @@ $(function() {
       expYear: $("#id_expiry_year").val(),
       cvc: $("#id_cvv").val()
     };
-    // link to strip for developers for more info - https://stripe.dev/
+    // link to strip for developers for more info - https://stripe.dev and https://stripe.com/docs/testing
     Stripe.createToken(card, function(status, response) {
       if (status === 200) {
         // very important to hide these details. They should never be shown, as stripe handle all payments.
