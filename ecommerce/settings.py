@@ -67,7 +67,6 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
-# below is to keep travis integration testing working
 
 if "DATABASE_URL" in os.environ:
     DATABASES = {
