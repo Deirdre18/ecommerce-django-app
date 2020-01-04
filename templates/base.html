@@ -34,14 +34,20 @@
         </button>
         <a class="navbar-brand" href="/">Yoda Designs Ltd</a>
       </div>
+
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
           {% if user.is_authenticated %}
+          <li><a href="{% url 'products' %}"><i class="fa fa-product-hunt" aria-hidden="true"></i>Products</a></li>
+          <li><a href="{% url 'index' %}"><i class="fa fa-home"></i> Home</a></li>
           <li><a href="{% url 'profile' %}"><i class="fa fa-user"></i> Profile</a></li>
           <li><a href="{% url 'logout' %}"><i class="fa fa-sign-out"></i> Log Out</a></li>
           {%  else %}
           <li><a href="{% url 'registration' %}"><i class="fa fa-user-plus"></i> Register</a></li>
           <li><a href="{% url 'login' %}"><i class="fa fa-sign-in"></i> Log In</a></li>
+          <li><a href="{% url 'index' %}"><i class="fa fa-home"></i>Home</a></li>
+          <li><a href="{% url 'products' %}"><i class="fa fa-product-hunt" aria-hidden="true"></i>Products</a></li>
+
           {% endif %}
           <li>
             <a href="{% url 'view_cart' %}">
@@ -78,10 +84,11 @@
     </div>
     {% block content %} {% endblock %}
   </div>
-  <footer>
-    <div class="container">
-      <p>Copyright (c) 2019 Deirde Weldon</p>
-    </div>
+  <footer class="footer">
+    <nav class="navbar navbar-masthead navbar-inverse navbar-fixed-bottom">
+      <p class="copyright">Copyright (c) 2019 Deirdre Weldon.
+
+    </nav>
   </footer>
 </body>
 

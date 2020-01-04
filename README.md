@@ -55,14 +55,17 @@ This project is developed on Heroku Platform - [YodaDesign](https://yoda-design.
 
 ## **Code**
 
-## **Acknowledgements/Credits/Inspiration**
+## **References/Acknowledgement**
 Referred to these websites to look for images:-
-
-https://www.argos.co.uk/product/2006617
 
 https://www.amazon.com/Abystyle-STAR-WARS-Mousepad-Yoda/dp/B01BFGCJ38
 
 https://money.com/baby-yoda-toys-t-shirt-mandalorian-disney-plus/
+
+https://www.eonline.com/news/1099401/baby-yoda-dolls-are-here-but-there-s-a-catch
+
+https://www.lego.com/en-us/kids/sets/star-wars/yoda-495867f9321e4189a2e241fc88bafd3e
+
 
 ## Licence
 Copyright (c) 2019 Deirde Weldon

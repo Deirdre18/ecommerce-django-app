@@ -18,13 +18,13 @@ button {
 
 h1 {text-align: center;}
 
-footer {
+/*footer {
     margin-top: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
     border-top: 1px solid #ededed;
     color: #A9A9A9;
-}
+}*/
 
 .icon-bar {
     background-color: #fff;
@@ -70,6 +70,11 @@ caption p {
     border-color: transparent;
     padding: 0 10px;
 }
+
+.copyright {text-align:center;
+            color:#fff; }
+
+.social-links {position:center;}
 
 .panel-body {
     height: 100%;
