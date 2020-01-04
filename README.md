@@ -5,6 +5,8 @@
 
 <h1>Full Stack Framework Milestone - An ecommerce project using Django and Python</h1>
 
+[View Project](https://yoda-design.herokuapp.com/)
+
 ## **Purpose of Project**
 
 
@@ -43,7 +45,7 @@ GARRET'S FIVE PLANS OF UX DESIGN:-
 
 ## **Deployment**
 
-[Deployed Website]<a href="https://yoda-design.herokuapp.com/">
+This project is developed on Heroku Platform - [YodaDesign](https://yoda-design.herokuapp.com/)
 
 ## **How to run the code in this project**
 
@@ -54,6 +56,10 @@ GARRET'S FIVE PLANS OF UX DESIGN:-
 ## **Code**
 
 ## **Acknowledgements/Credits/Inspiration**
+Referred to these websites to look for images:-
+
+https://www.argos.co.uk/product/2006617
+https://www.amazon.com/Abystyle-STAR-WARS-Mousepad-Yoda/dp/B01BFGCJ38
 
 ## Licence
 Copyright (c) 2019 Deirde Weldon
