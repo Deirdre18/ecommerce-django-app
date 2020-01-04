@@ -2,7 +2,7 @@
 
 An ecommerce project using Django and Python.
 
-[![Build Status](https://travis-ci.org/Deirdre18/ecommerce-django-app.svg?branch=master)](https://travis-ci.org/Deirdre18/ecommerce-django-app)
+[![Build Status](https://travis-ci.org/Deirdre18/ yoda-design-ecommerce-app-Milestone4-project.svg?branch=master)](https://travis-ci.org/Deirdre18/ yoda-design-ecommerce-app-Milestone4-project)
 
 # **Yoda Design Ecommerce 4th Milestone Project**
 
