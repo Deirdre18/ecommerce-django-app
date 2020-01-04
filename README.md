@@ -1,4 +1,3 @@
-# Yoda Design Ecommerce 4th Milestone Project
 
 [![Build Status](https://travis-ci.org/Deirdre18/yoda-design-ecommerce-app-Milestone4-project.svg?branch=master)](https://travis-ci.org/Deirdre18/yoda-design-ecommerce-app-Milestone4-project)
 
@@ -6,9 +5,9 @@
 
 <h1>Full Stack Framework Milestone - An ecommerce project using Django and Python</h1>
 
-[View Website]<a href="https://yoda-design.herokuapp.com/" target="_blank">
+[Deployed Website]<a href="https://yoda-design.herokuapp.com/" target="_blank">
 
-# **Purpose of Yoda Design Ecommerce 4th Milestone Project**
+## **Purpose of Yoda Design Ecommerce 4th Milestone Project**
 
 
 ## **UX Design**
@@ -26,21 +25,21 @@
 
 ### **Surface**
 
-## Quick Tutorial
+## **Quick Tutorial**
 
 ## **Features Overview**
 
-### **Existing Features**
+## **Existing Features**
 
-### **Features Left to Implement or would like to implement in future versions**
+## **Features Left to Implement or would like to implement in future versions**
 
 ## **Testing**
 
-### **Django Built-in Tests*
+### **Django Built-in Tests**
 
-### ***Travis Testing***
+### **Travis Testing**
 
-## Databse schema:
+## **Databse schema**:
 
 ## **Version Control (GitHub)**
 
@@ -52,13 +51,13 @@
 
 ## **Credits**
 
-### **Content**
+## **Content**
 
-### **Code**
+## **Code**
 
-### **Acknowledgements**
+## **Acknowledgements**
 
-### Licence
+## Licence
 Copyright (c) 2019 Deirde Weldon
 
 Written with [StackEdit](https://stackedit.io/)
