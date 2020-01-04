@@ -59,7 +59,10 @@ This project is developed on Heroku Platform - [YodaDesign](https://yoda-design.
 Referred to these websites to look for images:-
 
 https://www.argos.co.uk/product/2006617
+
 https://www.amazon.com/Abystyle-STAR-WARS-Mousepad-Yoda/dp/B01BFGCJ38
+
+https://money.com/baby-yoda-toys-t-shirt-mandalorian-disney-plus/
 
 ## Licence
 Copyright (c) 2019 Deirde Weldon
