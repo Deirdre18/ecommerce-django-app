@@ -5,8 +5,6 @@
 
 <h1>Full Stack Framework Milestone - An ecommerce project using Django and Python</h1>
 
-[Deployed Website]<a href="https://yoda-design.herokuapp.com/" target="_blank">
-
 ## **Purpose of Project**
 
 
@@ -45,7 +43,7 @@ GARRET'S FIVE PLANS OF UX DESIGN:-
 
 ## **Deployment**
 
-[Deployed Website]<a href="https://yoda-design.herokuapp.com/" target="_blank">
+[Deployed Website]<a href="https://yoda-design.herokuapp.com/">
 
 ## **How to run the code in this project**
 
