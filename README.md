@@ -31,13 +31,13 @@ GARRET'S FIVE PLANS OF UX DESIGN:-
 
 ## **Existing Features**
 
-## **Features Left to Implement or would like to implement in future versions**
+## **Features that could be implemented in future versions**
 
 ## **Testing**
 
-### **Django Built-in Tests**
+### - Django Built-in Tests
 
-### **Travis Testing**
+### - Travis Testing
 
 ## **Databse schema**:
 
@@ -55,7 +55,7 @@ GARRET'S FIVE PLANS OF UX DESIGN:-
 
 ## **Code**
 
-## **Acknowledgements**
+## **Acknowledgements/Credits/Inspiration**
 
 ## Licence
 Copyright (c) 2019 Deirde Weldon
