@@ -7,23 +7,23 @@
 
 [Deployed Website]<a href="https://yoda-design.herokuapp.com/" target="_blank">
 
-## **Purpose of Yoda Design Ecommerce 4th Milestone Project**
+## **Purpose of Project**
 
 
 ## **UX Design**
 
 
-**Garret's 5 Planes of UX design are as follows:-**
+GARRET'S FIVE PLANS OF UX DESIGN:-
 
-### **Strategy (The goal)**
+### - Strategy (The goal)
 
-### **Scope (What tasks can be done)**
+### - Scope (What tasks can be done)
 
-### **Structure (Plan or Flow of Interactions)**
+### - Structure (Plan or Flow of Interactions)
 
-### **Skeleton**
+### - Skeleton
 
-### **Surface**
+### - Surface
 
 ## **Quick Tutorial**
 
