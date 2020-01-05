@@ -9,7 +9,7 @@ body {
 }
 
 button {
-    margin-top: 20px;
+    margin-top: 10px;
     padding-bottom: 5px;
     padding-top: 5px;
     background-color:green;
@@ -85,6 +85,7 @@ caption p {
   border-radius: 50%;
   font-size: 25px;
   line-height: 13px;
+  color:navy;
   }
 
 .fa-facebook {
@@ -95,6 +96,7 @@ caption p {
   border-radius: 50%;
   font-size: 25px;
   line-height: 13px;
+  color:navy;
   }
 
 .fa-linkedin {
@@ -105,4 +107,5 @@ caption p {
    border-radius: 50%;
    font-size: 25px;
    line-height: 13px;
+   color:navy;
    }
