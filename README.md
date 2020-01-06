@@ -35,19 +35,56 @@ GARRET'S FIVE PLANS OF UX DESIGN:-
 
 ## **Testing**
 
+### - General Testing
+After some time testing both debug and alternating deployment in production mode, I was able to understand how static files worked in both modes. In production mode, debug should be off for security reasons, however this then can cause conflict with displaying static and media files. As I installed Whitenoise, I added ''whitenoise.runserver_nostatic'in my installed apps in settings.py. I refered to [Whitenoise docs]- ("http://whitenoise.evans.io/en/stable/django.html"). This meant that static file handling was taken over by Whitenoise instead of Django and so I could view static files in production mode locally. However when I deployed to Heroku, an error occurred saying that I should add DISABLE_COLLECTATIC=1 into config variables in Heroku, which I did.  
+
+On further testing I worked out a way to test in debug mode, whilst commenting out STATIC_ROOT = os.path.join(BASE_DIR, 'static') in base.html file, and uncommenting it when deploying to Heroku. In this way I can test in debug mode and view all static and media files and deploy to Heroku confident that static/media files will be displayed in production mode.
+
 ### - Django Built-in Tests
 
+I tested products using tests.py, the code was as follows. After running python3 manage.py test products, all tests passed.
+
+from django.test import TestCase
+from .models import Product
+
+class ProductTests(TestCase):
+    """
+    Here we'll define the tests that we'll run against our
+    Product model. In order to run tests, 'test' must be defined at start.
+    """
+    def test_str(self):
+        test_name = Product(name='A product')
+        self.assertEqual(str(test_name), 'A product')
+
 ### - Travis Testing
+
+Travis Continuous Integration has been passing tests since I first started this project. The Travis link is at the top of README. I have found it very useful in aligning integrated testing with development.
+
+### - Manual testing
+
+Manually tested login, register, add products to cart, view blogs, profile and login status, search bar.
+
+### - Developer tools
+
+Used Chrome and Firefox developer tools to view app in responsive mode and debug throughout developing this project.
 
 ## **Databse schema**:
 
 ## **Version Control (GitHub)**
 
+I continuously pushed to GitHub with useful comments in every commit. It was therefore easier to track back to any problems.
+
 ## **Deployment**
+
+I deployed this project to Heroku Platform, which is a free cloud based platform. I provisioned PosgressSQL add-on (free hobby version) on Heroku. I connected my deployment to GitHub, so that whenever I pushed to GitHub, the deployed app was also updated to the current version. In Heroku, I configured variables, such as SECRET_KEY, STRIPE_PUBLISHABLE, STRIPE_SECRET, DISABLE_COLLECTSTATIC=1, DJ_DATABASE_URL.
 
 This project is developed on Heroku Platform - [YodaDesign](https://yoda-design.herokuapp.com/)
 
-## **How to run the code in this project**
+## **How I developed this project and how to run the code for this project**
+
+## **Difficulties I came across**
+
+I encountered difficulty using STRIPE at one point, as I had changed base.html file and moved jquery script to bottom of page, which is where it usually goes. However for STRIPE to work and a payment to be accepted (using testing card 4242 4242 4242 4242 and CVV, which can be any three digits) - jquery needs to go at the top of base.html file. I used firefox developer tools to debug and saw a jquery reference error relating to this.
 
 ## **Credits**
 
@@ -72,8 +109,10 @@ https://www.lego.com/en-us/kids/sets/star-wars/yoda-495867f9321e4189a2e241fc88ba
 
 https://www.amazon.com/slp/yoda-gifts/7hw5autakufk8oo
 
+https://www.liveabout.com/yoda-in-star-wars-2957947
+
 
 ## Licence
-Copyright (c) 2019 Deirde Weldon
+Copyright (c)Yoda Design
 
 Written with [StackEdit](https://stackedit.io/)
