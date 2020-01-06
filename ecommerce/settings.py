@@ -21,6 +21,8 @@ ALLOWED_HOSTS = ['127.0.0.1', 'localhost',
 
 # Application definition
 INSTALLED_APPS = [
+    # referred to this - http://whitenoise.evans.io/en/stable/django.html for running static files
+    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -120,6 +122,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
+# referred to this - http://whitenoise.evans.io/en/stable/django.html
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # all media will be kept in directory called media
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
@@ -127,6 +131,3 @@ MEDIA_URL = '/media/'
 
 STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE')
 STRIPE_SECRET = os.getenv('STRIPE_SECRET')
-
-# to fix an issue if using cloud9
-MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
