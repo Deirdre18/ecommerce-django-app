@@ -51,6 +51,8 @@ This project is developed on Heroku Platform - [YodaDesign](https://yoda-design.
 
 ## **Credits**
 
+For some code I used, I give credit to fellow student (Lucas Suarez) 'https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app' and I also give credit to Code Institute for their solutions on GitHub - https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app
+
 ## **Content**
 
 ## **Code**
