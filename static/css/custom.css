@@ -165,19 +165,24 @@ caption p {
    }
 
    .footer-img img {
-       width: 80%;
-       height: 100%;
+       width: 100%;
+       height: auto;
    }
 
 ----------------------------------------------------------------------------------------
                                     MEDIA QUERIES
 ---------------------------------------------------------------------------------------
 
+
     /   @media screen and (max-width: 767px) {
            #myFooter {
                text-align: center;
            }
        }
+
+
+
+
 
 /* ----------------------------------------------------------------------------------------
                                         1. NavBar-Search CSS
@@ -204,12 +209,17 @@ caption p {
                                         PARALLAX DIV
 --------------------------------------------------------------------------------------- */
 
+/*referred to https://stackoverflow.com/questions/29592302/bootstrap-responsive-jumbotron/50710437*/
+
 .parallax {
      background: url("/static/img/baby_yoda_dolls.jpeg");
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
      background-position: center;
      background-size: cover;
+    -o-background-size: cover;
      background-repeat: no-repeat;
-     height: 15em;
+     height: 20em;
      background-attachment: fixed;
      filter: brightness(50%);
 }
@@ -220,10 +230,12 @@ caption p {
 
 .jumbotron {
     background: white url("/static/img/baby_yoda_dolls.jpeg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
     background-position: center;
     background-size: cover;
+    -o-background-size: cover;
     background-repeat: no-repeat;
-    height: 20em;
+    height: 28em;
     filter: brightness(80%);
-
-  }
+}
