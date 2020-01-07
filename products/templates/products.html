@@ -5,13 +5,13 @@
 
 <!-- Main Banner -->
 
+<!-- Main Banner -->
+
 <div class="jumbotron">
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-8 col-centered">
-        <h3 class="title-homepage text-center">Welcome to Yoda Designs, where Design is what matters most.</h3>
-      </div>
-    </div>
+    <br><br><br><br>
+
+    <h3 class="title-homepage text-center"><strong>Yoda Design: Bringing the Force to you</strong></h3>
   </div>
 </div>
 
@@ -19,11 +19,11 @@
 <div class="row row-flex">
   {% for product in products %}
   <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
-    <div class="panel-body">
+    <div class="panel-body" style="margin-left:10px; margin-right:10px; background-color:pink">
       <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
 
       <h3>{{ product.name }}</h3>
-      <p class="product-description">{{ product.description }}</p>
+      <p class=" product-description">{{ product.description }}</p>
       <p>{{ product.price }}€</p>
 
       <form method="post" action="{% url 'add_to_cart' product.id %}">

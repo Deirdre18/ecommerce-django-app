@@ -68,6 +68,10 @@ Manually tested login, register, add products to cart, view blogs, profile and l
 
 Used Chrome and Firefox developer tools to view app in responsive mode and debug throughout developing this project.
 
+### - Testing STRIPE
+
+Tested STRIP payments on checkout using testing card 42424242424242 CVV 111 (or any 3 digits). This worked and got message saying "payment successful".
+
 ## **Databse schema**:
 
 ## **Version Control (GitHub)**
@@ -78,7 +82,7 @@ I continuously pushed to GitHub with useful comments in every commit. It was the
 
 I deployed this project to Heroku Platform, which is a free cloud based platform. I provisioned PosgressSQL add-on (free hobby version) on Heroku. I connected my deployment to GitHub, so that whenever I pushed to GitHub, the deployed app was also updated to the current version. In Heroku, I configured variables, such as SECRET_KEY, STRIPE_PUBLISHABLE, STRIPE_SECRET, DISABLE_COLLECTSTATIC=1, DJ_DATABASE_URL.
 
-This project is developed on Heroku Platform - [YodaDesign](https://yoda-design.herokuapp.com/)
+This project is developed on Heroku Platform - [Yoda Design](https://yoda-design.herokuapp.com/)
 
 ## **How I developed this project and how to run the code for this project**
 
@@ -113,6 +117,6 @@ https://www.liveabout.com/yoda-in-star-wars-2957947
 
 
 ## Licence
-Copyright (c)Yoda Design
+Copyright (c) Deirdre Weldon
 
 Written with [StackEdit](https://stackedit.io/)
