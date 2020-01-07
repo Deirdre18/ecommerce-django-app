@@ -103,18 +103,19 @@ I also give credit to Code Institute for their solutions on GitHub - https://git
 ## **References/Acknowledgement**
 Referred to these websites to look for images:-
 
-https://www.amazon.com/Abystyle-STAR-WARS-Mousepad-Yoda/dp/B01BFGCJ38
+[Yoda Mousepad](https://www.amazon.com/Abystyle-STAR-WARS-Mousepad-Yoda/dp/B01BFGCJ38)
 
-https://money.com/baby-yoda-toys-t-shirt-mandalorian-disney-plus/
+[Mandalorian products](https://money.com/baby-yoda-toys-t-shirt-mandalorian-disney-plus/)
 
-https://www.eonline.com/news/1099401/baby-yoda-dolls-are-here-but-there-s-a-catch
+[Baby Yoda Dolls](https://www.eonline.com/news/1099401/baby-yoda-dolls-are-here-but-there-s-a-catch)
 
-https://www.lego.com/en-us/kids/sets/star-wars/yoda-495867f9321e4189a2e241fc88bafd3e
+[Yoda Lego](https://www.lego.com/en-us/kids/sets/star-wars/yoda-495867f9321e4189a2e241fc88bafd3e)
 
-https://www.amazon.com/slp/yoda-gifts/7hw5autakufk8oo
+[Yoda gifts Amazon](https://www.amazon.com/slp/yoda-gifts/7hw5autakufk8oo)
 
-https://www.liveabout.com/yoda-in-star-wars-2957947
+[Star Wars Products](https://www.liveabout.com/yoda-in-star-wars-2957947)
 
+For help with making jumbotron responsive across different sized devices, I referred to this [Jumbotron Responsiveness](https://stackoverflow.com/questions/29592302/bootstrap-responsive-jumbotron/50710437)
 
 ## Licence
 Copyright (c) Deirdre Weldon
