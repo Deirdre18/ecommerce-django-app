@@ -57,7 +57,7 @@ In this section, I tried to place the elements in appropriate places, and in a l
 
 ### - Surface
 
-The surface, or the skin – is the interface for which visitors will engage with the dashboard. I kept the color scheme congruent, using vibrant and zazzy colors (dark pink for navbar and footer and lighter shade of pink for background, so the website was a mixture of pink and white with shades of grey (grey button, etc) throughout. The colours were complimentary. I felt the color scheme was congruent and created a good look and feel and that it was appropriate to a designer themed e-commerce website.
+The surface, or the skin is the interface for which visitors will engage with the dashboard. I kept the color scheme congruent, using vibrant and zazzy colors (dark pink for navbar and footer and lighter shade of pink for background, so the website was a mixture of pink and white with shades of grey (grey button, etc) throughout. The colours were complimentary. I felt the color scheme was congruent and created a good look and feel and that it was appropriate to a designer themed e-commerce website.
 
 ### Features Overview
 
@@ -122,7 +122,6 @@ Manually tested login, register, add products to cart, view blogs, profile and l
 
 - Search -
 
-
 ### - Developer tools testing
 
 Used Chrome and Firefox developer tools to view app in responsive mode and debug throughout developing this project. I tested this project on iPhone 6/7/8, Galaxy S9/S9+, iPad, iPhone 6/7/8 Plus, iPhone X/XS, Kindle Fire HDX and on medium and large screen sizes.
@@ -136,17 +135,18 @@ Tested STRIP payments on checkout using testing card 42424242424242 CVV 111 (or 
 ### Results from Postgress Database Schema Explorer in heroku
 
 **products_prodct**                 **auth_user**
-description     text                date_joined      timestamptz
-id              int4                email            varchar
-image           varchar             first_name       varchar
-name            varchar             id               int4
-price           numeric             is_active        bool
-                                    is_staff         bool
-                                    is_superuser     bool
-                                    last_login       timestamptz
-                                    last_name        varchar
-                                    password         varchar
-                                    username         varchar
+------------------------            -------------------------------
+description |    text                date_joined  |   timestamptz
+id          |    int4                email        |   varchar
+image       |    varchar             first_name   |   varchar
+name        |    varchar             id           |   int4
+price       |    numeric             is_active    |   bool
+                                    is_staff      |   bool
+                                    is_superuser  |   bool
+                                    last_login    |   timestamptz
+                                    last_name     |   varchar
+                                    password      |   varchar
+                                    username      |   varchar
 
 **django_admin_log**                  **django_session**
 action_flag           int2            expire_date   timestamptz
