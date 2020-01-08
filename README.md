@@ -12,9 +12,9 @@ This project is my 4th Milestone Project for Full-Stack Diploma in Software Deve
 
 ## **UX Design**
 
-![[Products Page](UX Design/Products Page.png)
+![Products Page](UX Design/Products Page.png)
 
-![[Checkout Page](UX Design/checkout_page.png)
+![Checkout Page](UX Design/checkout_page.png)
 
 The initial idea of creating DumpDinners website originated from my interest in designer made products and as one of the ideas for this project was a design theme. Furthermore my fascination of Yoda in Star Wars and its popularity inspired me to develop an Ecommerce app with a design theme -[StarWars Website](https://www.starwars.com/databank/yoda).
 
@@ -63,7 +63,7 @@ In this section, I tried to place the elements in appropriate places, and in a l
 
 The surface, or the skin – is the interface for which visitors will engage with the dashboard. I kept the color scheme congruent, using vibrant and zazzy colors (dark pink for navbar and footer and lighter shade of pink for background, so the website was a mixture of pink and white with shades of grey (grey button, etc) throughout. The colours were complimentary. I felt the color scheme was congruent and created a good look and feel and that it was appropriate to a designer themed e-commerce website.
 
-## **Features Overview**
+### Features Overview
 
 ## **Existing Features**
 
@@ -221,7 +221,8 @@ This project is developed on Heroku Platform - [Yoda Design](https://yoda-design
 
 I developed this project using Atom text editor, which worked very well and had minimal issues. I firstly went through videos to learn Django from Code Institute, putting it all together and creating a 'BlogAllAboutIt app'. From there I was able to use this as a basis to create and development this project. I did not use AWS or Cloud9, however some files in the 'suggestions' folder are named using C9. The reason for this being that I directly copied this particular folder (called 'Suggestions') from a fellow student into my project to resuse the code he wrote, in order to save time, as the deadline for submission was fastly approaching. I have given credit to [Lucas Suarez](https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app/blob/master/README.md) for his award winning project which was featured in Code Institute's Code Insider's newsletter.
 
-The steps I took to develop this project are as follows:--
+The steps I took to develop this project are as follows:-
+
 **Please note that the project was originally created from the Code Institute tutorials and renamed to 'Yoda Design'.** Further design and development was done to the basic structure of the project, as outlined in this README.
 
 **The steps I took to create this project and how to run this project.**
