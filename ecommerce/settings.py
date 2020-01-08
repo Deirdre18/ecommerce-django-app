@@ -14,7 +14,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost',
                  'yoda-design.herokuapp.com']
@@ -123,7 +123,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
 # referred to this - http://whitenoise.evans.io/en/stable/django.html
-#STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # all media will be kept in directory called media
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
