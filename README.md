@@ -12,6 +12,10 @@
 
 ## **UX Design**
 
+[Image of Products Page](/UX Design/Products Page.png)
+[Image of Checkout Page](/UX Design/checkout_page.png)
+[Image of Checkout Mobile View Page](/UX Design/checkout_mobile_view.png)
+
 
 GARRET'S FIVE PLANS OF UX DESIGN:-
 
@@ -36,7 +40,7 @@ GARRET'S FIVE PLANS OF UX DESIGN:-
 ## **Testing**
 
 ### - General Testing
-After some time testing both debug and alternating deployment in production mode, I was able to understand how static files worked in both modes. In production mode, debug should be off for security reasons, however this then can cause conflict with displaying static and media files. As I installed Whitenoise, I added ''whitenoise.runserver_nostatic'in my installed apps in settings.py. I refered to [Whitenoise docs]- ("http://whitenoise.evans.io/en/stable/django.html"). This meant that static file handling was taken over by Whitenoise instead of Django and so I could view static files in production mode locally. However when I deployed to Heroku, an error occurred saying that I should add DISABLE_COLLECTATIC=1 into config variables in Heroku, which I did.  
+After some time testing both debug and alternating deployment in production mode, I was able to understand how static files worked in both modes. In production mode, debug should be off for security reasons, however this then can cause conflict with displaying static and media files. As I installed Whitenoise, I added ''whitenoise.runserver_nostatic'in my installed apps in settings.py. I refered to [Whitenoise docs]("http://whitenoise.evans.io/en/stable/django.html"). This meant that static file handling was taken over by Whitenoise instead of Django and so I could view static files in production mode locally. However when I deployed to Heroku, an error occurred saying that I should add DISABLE_COLLECTATIC=1 into config variables in Heroku, which I did.  
 
 On further testing I worked out a way to test in debug mode, whilst commenting out STATIC_ROOT = os.path.join(BASE_DIR, 'static') in base.html file, and uncommenting it when deploying to Heroku. In this way I can test in debug mode and view all static and media files and deploy to Heroku confident that static/media files will be displayed in production mode.
 
@@ -70,9 +74,65 @@ Used Chrome and Firefox developer tools to view app in responsive mode and debug
 
 ### - Testing STRIPE
 
-Tested STRIP payments on checkout using testing card 42424242424242 CVV 111 (or any 3 digits). This worked and got message saying "payment successful".
+Tested STRIP payments on checkout using testing card 42424242424242 CVV 111 (or any 3 digits). This worked and got message saying "payment successful". On trying other varients of testing card number I got some interesting messages. Instead of inputting the 16 digit test card number, if I put in the same numbers but had 19 digits, I got no messages displayed but got email from STRIPE saying that the charging  API used for testing purposes doesn't cover SCA (strong customer authentication) and as such testing doesn't support SCA or 2-factor. authentication.
 
 ## **Databse schema**:
+
+### Postgres Database Schema Explorer in heroku
+
+products_prodct                     auth_user
+
+description     text                date_joined      timestamptz
+id              int4                email            varchar
+image           varchar             first_name       varchar
+name            varchar             id               int4
+price           numeric             is_active        bool
+                                    is_staff         bool
+                                    is_superuser     bool
+                                    last_login       timestamptz
+                                    last_name        varchar
+                                    password         varchar
+                                    username         varchar
+
+django_admin_log                      django_session
+
+action_flag           int2            expire_date   timestamptz
+action_time           timestamptz     session_data  text
+change_message        text            session_key   varchar
+content_type_id       int4
+id                    int4
+object_id             text
+object_repr           varchar
+user_id               int4
+
+checkout_order                        posts
+
+country               varchar         content           text
+county                varchar         created_date      timestamptz
+date                  date            id                int4
+full_name             varchar         order_id          int4
+id                    int4            product_id        int4
+phone_number          varchar         quantity          int4
+postcode              varchar
+street_address        1varchar
+street_address        2varchar
+town_or_city          varchar
+
+checkout_orderlineitem
+
+
+
+
+
+
+
+
+idint4
+imagevarchar
+published_datetimestamptz
+tagvarchar
+titlevarchar
+viewsint4
 
 ## **Version Control (GitHub)**
 
@@ -92,9 +152,9 @@ I encountered difficulty using STRIPE at one point, as I had changed base.html f
 
 ## **Credits**
 
-For some code I used, I give credit to fellow student (Lucas Suarez) -https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app'.
+For some code I used, I give credit to fellow student (Lucas Suarez) -[Django-tech-ecommerce](https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app).
 
-I also give credit to Code Institute for their solutions on GitHub - https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app
+I also give credit to Code Institute for their solutions on GitHub - [GitHubSolutions](https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app)
 
 ## **Content**
 

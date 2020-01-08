@@ -20,11 +20,11 @@
 <div class="row row-flex">
   {% for item in cart_items %}
   <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
-    <div class="panel-body">
+    <div class="panel-body" style="margin-left:20px">
       <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
 
       <div class="caption">
-        <h3>{{ item.product.name }}</h3>
+        <h3><strong>{{ item.product.name }}</strong></h3>
         <p class="product-description">{{ item.product.description }}</p>
         <p>{{ item.quantity }}</p>
         <p>item.product.price</p>
@@ -33,13 +33,13 @@
   </div>
   {% endfor %}
 </div>
-<div class="row">
-  <p>Total</p>
-  <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}</p>
+<div class="row" style="margin-left:20px">
+  <p><strong>Total&nbsp</strong></p>
+  <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>€{{ total }}</p>
 </div>
 <!--two forms, payment and address details-->
-<form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
-  <legend>Payment Details</legend>
+<form role="form" method="post" id="payment-form" style="margin-left:20px" ; action="{% url 'checkout' %}">
+  <legend><strong>Payment Details</strong></legend>
 
   <div id="credit-card-errors" style="display: none;">
     <div id="alert-message block-message error" id="stripe-error-message"></div>
