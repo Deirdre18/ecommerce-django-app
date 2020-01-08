@@ -16,6 +16,8 @@
 
 [Image of Checkout Mobile View Page](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/checkout_page.png)
 
+
+
 GARRET'S FIVE PLANS OF UX DESIGN:-
 
 ### - Strategy (The goal)

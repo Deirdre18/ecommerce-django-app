@@ -1,13 +1,14 @@
-{% extends 'base.html' %} {% block page_title %}{{ user }}'s Profile{% endblock %} {% block page_heading %}{{ user }}'s Profile{% endblock %} {% block content %}
-<p>{{ profile.email }}</p>
+{% extends 'base.html' %} {% block page_title %}{{ user }}'s Profile{% endblock %} {% block page_heading %}<strong>{{ user }}'s</strong> <strong>Profile</strong>{% endblock %} {% block content %}
 
-<h2 style="text-align:center">Your Profile</h2>
-<h2>Good to see you!</h2>
-<p>You are logged in as {{ user.username }} </p>
-<p>Your email address is: {{user.email}}</p>
-<br>
-<p>Here are the products you have ordered:</p>
+<div class="profile" style="margin-left:20px; margin-right:20px; background-color:pink">
 
-{{orders.user}}
+  <p>{{ profile.email }}</p>
+  <h2>Good to see you!</h2><br>
+  <p>You are logged in as {{ user.username }} </p><br>
+  <p>Your email address is: {{user.email}}</p><br>
 
-{% endblock %}
+  <p>Here are the products you have ordered:</p>
+
+  {{orders.user}}
+
+  {% endblock %}

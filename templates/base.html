@@ -50,6 +50,16 @@ https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app-->
         <li class="nav-item">
           <a class="nav-link" href="{% url 'products' %}">Products <span class="sr-only">(current)</span></a>
         </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="{% url 'get_suggestions' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ideas
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{% url 'get_suggestions' %}">See all suggestions</a>
+            <a class="dropdown-item" href="{% url 'new_suggestion' %}">Add new suggestion</a>
+          </div>
+        </li>
+
         <li class="nav-item">
           <a class="nav-link" href="{% url 'get_posts' %}">Blog <span class="sr-only">(current)</span></a>
         </li>
@@ -128,7 +138,7 @@ https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app-->
             <li><a href="{% url 'index' %}">Home</a></li>
             <li><a href="{% url 'products' %}">Products</a></li>
             <li><a href="{% url 'get_posts' %}">Blog</a></li>
-            <li><a href="{% url 'index' %}">Company Information</a></li>
+            <li><a href="{% url 'about' %}">About Yoda Design</a></li>
           </ul>
           <div class="social-networks">
             <a href="https://www.twitter.com/" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
