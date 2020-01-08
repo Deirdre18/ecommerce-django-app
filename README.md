@@ -12,20 +12,12 @@ This project is my 4th Milestone Project for Full-Stack Diploma in Software Deve
 
 ## **UX Design**
 
-![Products Page](./UX Design/Products Page.png)
-
-![Checkout Page](./UX Design/checkout_page.png)
-
-![Products Page](e-commerce/UX Design/Products Page.png)
-
-
-
-The initial idea of creating DumpDinners website originated from my interest in designer made products and as one of the ideas for this project was a design theme. Furthermore my fascination of Yoda in Star Wars and its popularity inspired me to develop an Ecommerce app with a design theme -[StarWars Website](https://www.starwars.com/databank/yoda).
+The initial idea of creating Yoda Design website originated from my interest in designer made products and as one of the ideas for this project was a design theme. Furthermore my fascination of Yoda in Star Wars and its popularity inspired me to develop an Ecommerce app with a design theme -[StarWars Website](https://www.starwars.com/databank/yoda).
 
 ### - Blob Images
-[Image of Products Page](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/Products%20Page.png)
+![Image of Products Page](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/Products%20Page.png)
 
-[Image of Checkout Mobile View Page](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/checkout_page.png)
+![Image of Checkout Mobile View Page](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/checkout_page.png)
 
 **User and User Stories**
 First and foremost, the user is the primary focus of creating any website. The type of user I would expect to view Yoda Design e-commerce app would be as follows:-
