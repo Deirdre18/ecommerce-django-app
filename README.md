@@ -16,7 +16,6 @@
 
 [Image of Checkout Mobile View Page](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/checkout_page.png)
 
-
 GARRET'S FIVE PLANS OF UX DESIGN:-
 
 ### - Strategy (The goal)
@@ -153,6 +152,8 @@ I encountered difficulty using STRIPE at one point, as I had changed base.html f
 ## **Credits**
 
 For some code I used, I give credit to fellow student (Lucas Suarez) -[Django-tech-ecommerce](https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app).
+
+I also give some credit to fellow student (Deborah Thompson) for taking some ideas to create this project - [Maths Revision]([Maths Revision](https://github.com/debbiect246/mathsplusrevision)
 
 I also give credit to Code Institute for their solutions on GitHub - [GitHubSolutions](https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app)
 
