@@ -12,9 +12,13 @@ This project is my 4th Milestone Project for Full-Stack Diploma in Software Deve
 
 ## **UX Design**
 
-![Products Page](/UX Design/Products Page.png)
+![Products Page](./UX Design/Products Page.png)
 
-![Checkout Page](/UX Design/checkout_page.png)
+![Checkout Page](./UX Design/checkout_page.png)
+
+![Products Page](e-commerce/UX Design/Products Page.png)
+
+
 
 The initial idea of creating DumpDinners website originated from my interest in designer made products and as one of the ideas for this project was a design theme. Furthermore my fascination of Yoda in Star Wars and its popularity inspired me to develop an Ecommerce app with a design theme -[StarWars Website](https://www.starwars.com/databank/yoda).
 
