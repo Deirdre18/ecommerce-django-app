@@ -1,72 +1,73 @@
+<!--# all of the code on this page was directly copied for a GitHub repository of fellow student - https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app-->
+
 {% extends 'base.html' %}
 {% load bootstrap_tags %}
 {% block content %}
 
-
 <!-- Header  -->
 
 <div class="jumbotron">
-    <div class="container-fluid">
-    </div>
+  <div class="container-fluid">
+  </div>
 </div>
 
 
 <div class="container mb-5">
-  <!-- Title  -->  
-    <div class="sec-title p-b-52 mt-3 mb-4">
-        <h3 class="m-text5 t-center"> Product Suggestions </h3>
-        <p>In this section you can make public any product suggestion you migh have. We take very serious all our customers feedback and we´ll do our best to add new products on sale base on your suggestions.</p>
-    </div>
-    
-    
-    <!-- Suggestions filter dropdown -->
-    <div class="container">
-        <div class="row justify-content-end">
-            <div class="dropdown mb-2">
-                    <button class="btn btn-secondary rounded-0 btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Filter Suggestions
-            </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a name="asc_votes" href="?asc_votes=1" class="dropdown-item">Highest votes</a>
-                        <a name="dsc_votes" href="?dsc_votes=1" class="dropdown-item">Lowest votes</a>
-                        <a name="First_added" href="?first_added=1" class="dropdown-item">Oldest</a>
-                        <a name="Last_added" href="?last_added=1" class="dropdown-item">Latest</a>
-                    </div>
-                </div>
-            </div>
-    </div>
-    <!-- Suggestions  -->
-    <div id="accordion">
-        {% for suggestion in suggestions %}   
-            <div class="card mb-3 rounded-0">
-                <div class="card-header" id="headingOne">
-                    <h5 class="mb-0 "> {{ suggestion.title }} </h5>
-                        <!-- Upvotes  -->
-                        <div class="float-right">
-                            <form class="votes-form justify-content-end" method="post" action="{% url 'upvotes' suggestion.id %}">
-                                {% csrf_token %}
-                                <button type="submit" class="btn btn btn-dark rounded-0 btn-sm ">
-                                            Votes <span class="badge badge-light">{{ suggestion.upvotes }}</span></button>
-                            </form>
-                            </div>
-                        <!-- Upvotes  -->
-                </div>
-        
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                    <div class="card-body">
-                        {{ suggestion.content }}
-                        
-                    </div>
-                </div>
-            
-            </div>
-         {% endfor %}
-    </div>
+  <!-- Title  -->
+  <div class="sec-title p-b-52 mt-3 mb-4">
+    <h3 class="m-text5 t-center"> Product Suggestions </h3>
+    <p>In this section you can make public any product suggestion you migh have. We take very serious all our customers feedback and we´ll do our best to add new products on sale base on your suggestions.</p>
+  </div>
 
 
-<!-- Button new suggestion  -->
+  <!-- Suggestions filter dropdown -->
+  <div class="container">
+    <div class="row justify-content-end">
+      <div class="dropdown mb-2">
+        <button class="btn btn-secondary rounded-0 btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Filter Suggestions
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a name="asc_votes" href="?asc_votes=1" class="dropdown-item">Highest votes</a>
+          <a name="dsc_votes" href="?dsc_votes=1" class="dropdown-item">Lowest votes</a>
+          <a name="First_added" href="?first_added=1" class="dropdown-item">Oldest</a>
+          <a name="Last_added" href="?last_added=1" class="dropdown-item">Latest</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Suggestions  -->
+  <div id="accordion">
+    {% for suggestion in suggestions %}
+    <div class="card mb-3 rounded-0">
+      <div class="card-header" id="headingOne">
+        <h5 class="mb-0 "> {{ suggestion.title }} </h5>
+        <!-- Upvotes  -->
+        <div class="float-right">
+          <form class="votes-form justify-content-end" method="post" action="{% url 'upvotes' suggestion.id %}">
+            {% csrf_token %}
+            <button type="submit" class="btn btn btn-dark rounded-0 btn-sm ">
+              Votes <span class="badge badge-light">{{ suggestion.upvotes }}</span></button>
+          </form>
+        </div>
+        <!-- Upvotes  -->
+      </div>
 
-    <a href="{% url 'new_suggestion' %}" class="btn btn-dark rounded-0 btn-sm btn-home-products" >Add Product Suggestion</a>
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body">
+          {{ suggestion.content }}
+
+        </div>
+      </div>
+
+    </div>
+    {% endfor %}
+  </div>
+
+
+  <!-- Button new suggestion  -->
+
+  <a href="{% url 'new_suggestion' %}" class="btn btn-dark rounded-0 btn-sm btn-home-products">Add Product Suggestion</a>
 
 </div>
 {% endblock %}

@@ -28,7 +28,7 @@ $(function() {
         // if there is no '200' error, stripe will send error message
       } else {
         // from stripe api. Error message in div in checkout.html
-        // all these id's are from stripe's developers site, can't just write whatever you want. This is trequired for stripe api to work
+        // all these id's are from stripe's developers site, can't just write whatever you want. This is required for stripe api to work
         $("#stripe-error-message").text(response.error.message);
         $("#credit-card-errors").show();
         $("#validate_card_btn").attr("disabled", false);

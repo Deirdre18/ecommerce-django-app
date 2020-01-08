@@ -1,3 +1,5 @@
+# all of the code on this page was directly copied for a GitHub repository of fellow student - https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app
+
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Suggestion
 from .forms import ProductSuggestForm
@@ -9,19 +11,21 @@ def get_suggestions(request):
     paramsDateAsc = request.GET.get('asc_date', '')
     paramsDateDsc = request.GET.get('dsc_date', '')
     if paramsAsc:
-     paramsDsc is True:   
-    elif paramsDsc:   
-            suggestions = Suggestion.objects.all().order_by('-upvotes').reverse()
-    elif paramsDateAsc: 
+        paramsDsc is True:
+    elif paramsDsc:
+        suggestions = Suggestion.objects.all().order_by('-upvotes').reverse()
+    elif paramsDateAsc:
         suggestions = Suggestion.objects.all()
-    elif paramsDateDsc: 
+    elif paramsDateDsc:
         suggestions = Suggestion.objects.all().DateTime()
     else:
         suggestions = Suggestion.objects.all()
-    
+
     return render(request, "suggestions.html", {'suggestions': suggestions})
 
-asc_date=1
+
+asc_date = 1
+
 
 def suggestion_detail(request, pk):
     if request.method == "GET":
@@ -38,7 +42,8 @@ def suggestion_detail(request, pk):
 def create_or_edit_suggestion(request, pk=None):
     suggestion = get_object_or_404(Suggestion, pk=pk) if pk else None
     if request.method == "POST":
-        form = ProductSuggestForm(request.POST, request.FILES, instance=suggestion)
+        form = ProductSuggestForm(
+            request.POST, request.FILES, instance=suggestion)
         if form.is_valid():
             suggestion = form.save()
             return redirect(suggestion_detail, suggestion.pk)

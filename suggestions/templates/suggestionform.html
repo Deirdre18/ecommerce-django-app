@@ -1,19 +1,21 @@
+<!--# all of the code on this page was directly copied for a GitHub repository of fellow student - https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app-->
+
 {% extends "base.html" %}
 {% load bootstrap_tags %}
 {% block content %}
 
-<div class="jumbotron"> 
-        <div class="container-fluid">
-        </div> 
-</div> 
+<div class="jumbotron">
+  <div class="container-fluid">
+  </div>
+</div>
 
 <div class="container mt-5 mb-5">
-    <h1>Add a new product Suggestion</h1>
-    <form method="POST" enctype="multipart/form-data">
-        {% csrf_token %}
-        {{ form | as_bootstrap }}
-        <button type="submit" class="btn btn-dark rounded-0">Add product suggestion</button>
-    </form>
+  <h1>Add a new product Suggestion</h1>
+  <form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form | as_bootstrap }}
+    <button type="submit" class="btn btn-dark rounded-0">Add product suggestion</button>
+  </form>
 </div>
 
 {% endblock %}
