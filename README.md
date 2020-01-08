@@ -37,7 +37,7 @@ First and foremost, the user is the primary focus of creating any website. The t
 - Anyone interested in supernatural phenomena.
 - Anyone interested in purchasing from an e-commerce online store.
 
-From researching what a user story is, I delved more into the background of StarWars, which is about aliens, space battles, ghosts and mystical power - akin to Harry Potter fantasy, only orchestrated in space. As fantasy exists in the imagination, it paves the way for actual real scientific technological advances in the future (ie) scientists have begun to create miniature lightsaber-like devices. The 'Force' is what makes StarWars fantasy, combined with the green energy fields which surround Jedi and seem magical. The Force acts like magic and magical things happen. StarWars and the characters put a dichotomy on dark forces, attachments and have a rule based hierarchy in the Kingdom. I referred to this websites for research - [Deciphering StarWars:Sci-Fi or Fantasy?](https://www.liveabout.com/star-wars-sci-fi-or-fantasy-2958030) and to research the line of products labelled 'Baby Yoda', I looked at this [Baby Yoda](https://www.cnet.com/news/who-or-what-is-baby-yoda-in-the-mandalorian-our-wildest-theories-so-far/).Baby Yoda is cute and adorable and a funky pop icon.
+From researching what a user story is, I delved more into the background of StarWars, which is about aliens, space battles, ghosts and mystical power - akin to Harry Potter fantasy, only orchestrated in space. As fantasy exists in the imagination, it paves the way for actual real scientific technological advances in the future (ie) scientists have begun to create miniature lightsaber-like devices. The 'Force' is what makes StarWars fantasy, combined with the green energy fields which surround Jedi and seem magical. The Force acts like magic and magical things happen. StarWars and the characters put a dichotomy on dark forces, attachments and have a rule based hierarchy in the Kingdom. I referred to this websites for research - [Deciphering StarWars:Sci-Fi or Fantasy?](https://www.liveabout.com/star-wars-sci-fi-or-fantasy-2958030) and to research the line of products labelled 'Baby Yoda', I referred to this link - [Baby Yoda](https://www.cnet.com/news/who-or-what-is-baby-yoda-in-the-mandalorian-our-wildest-theories-so-far/).Baby Yoda is cute and adorable and a funky pop icon.
 
 The user story above describes the type of user, what they want and why. A user story helps to create a simplified description of a requirement." - [What is a User Story?](https://searchsoftwarequality.techtarget.com/definition/user-story).
 
@@ -53,7 +53,7 @@ The tasks that can be accomplished on Yoda Design e-commerce app involve all CRU
 
 ### - Structure (Plan or Flow of Interactions)
 
-This is the plan or flow of interactions users will take to navigate and understand Yoda Design e-commerce website. I considered my database structure and detail below in the **database** section, the schemata of models used for the DumpDinners website.
+This is the plan or flow of interactions users will take to navigate and understand Yoda Design e-commerce website. I considered my database structure and detail below in the **database** section, the schemata of models used for the Yoda Design e-commerce website.
 
 ### - Skeleton
 
@@ -92,20 +92,6 @@ After some time testing both debug and alternating deployment in production mode
 
 On further testing I worked out a way to test in debug mode, whilst commenting out STATIC_ROOT = os.path.join(BASE_DIR, 'static') in base.html file, and uncommenting it when deploying to Heroku. In this way I can test in debug mode and view all static and media files and deploy to Heroku confident that static/media files will be displayed in production mode.
 
-### - Testing Functionality
-
-- Wrong password -
-
-- Wrong or non-existent Username -
-
-- Logged Out -
-
-- Registered -
-
-- Login -
-
-- Search -
-
 ### - Django Built-in Tests
 
 I tested products by running 'python3 manage.py test products', which successfully passed.
@@ -123,9 +109,23 @@ I tested products by running 'python3 manage.py test products', which successful
 
 Travis Continuous Integration has been passing tests since I first started this project. The Travis link is at the top of README. I have found it very useful in aligning integrated testing with development.
 
-### - Manual testing
+### - Manual testing of functionality
 
 Manually tested login, register, add products to cart, view blogs, profile and login status, search bar.
+
+
+- Wrong password -
+
+- Wrong or non-existent Username -
+
+- Logged Out -
+
+- Registered -
+
+- Login -
+
+- Search -
+
 
 ### - Developer tools testing
 
@@ -133,7 +133,7 @@ Used Chrome and Firefox developer tools to view app in responsive mode and debug
 
 ### - Testing STRIPE
 
-Tested STRIP payments on checkout using testing card 42424242424242 CVV 111 (or any 3 digits). This worked and got message saying "You have successfully paid". On trying other varients of testing card number I got some interesting messages. Instead of inputting the 16 digit test card number, if I put in the same numbers but had 19 digits, I got no messages displayed but got email from STRIPE saying that the charging  API used for testing purposes doesn't cover SCA (strong customer authentication) and as such testing doesn't support SCA or 2-factor authentication. The STRIPE developers website is here [STRIPE FOR DEVELOPERS]- (https://stripe.dev/)
+Tested STRIP payments on checkout using testing card 42424242424242 CVV 111 (or any 3 digits). This worked and got message saying "You have successfully paid". On trying other varients of testing card number I got some interesting messages. Instead of inputting the 16 digit test card number, if I put in the same numbers but had 19 digits, I got no messages displayed but got email from STRIPE saying that the charging  API used for testing purposes doesn't cover SCA (strong customer authentication) and as such testing doesn't support SCA or 2-factor authentication. The STRIPE developers website is here [STRIPE FOR DEVELOPERS](https://stripe.dev/)
 
 ## **Databse schema**:
 
@@ -183,7 +183,7 @@ title             varchar
 views             int4
 
 ### **Technologies used includes:**
-- **HTML5**, **CSS3**, **Javascript**, **JQuery**, **Bootstrap**, **Python**, **Django**
+- **HTML5**, **CSS3**, **Javascript**, **JQuery**, **Bootstrap**, **Python**, **Django**, **PostgresSQL**, **SQLite3**
 
 Base languages used to create website.
 
@@ -201,7 +201,7 @@ Used **Bootstrap 4.3.1** to add styling to forms and to the e-commerce app gener
 
 Used **Python 3.6.9** in a virtual environment for developing this project - [PYTHON](https://docs.python.org/3/)
 
-Used **Django 11.1.23** for developing this project - [FLASK]([Django](https://www.djangoproject.com/))
+Used **Django 11.1.23** for developing this project - [Django](https://www.djangoproject.com/)
 
 Used **Postgress Database** which was added on Heroku dashboard - [PostgresSQL Database](https://www.postgresql.org/)
 
