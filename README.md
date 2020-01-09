@@ -20,7 +20,7 @@ The initial idea of creating Yoda Design website originated from my interest in 
 ![Image of Products Page/Home Page](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/yoda_products.png)
 
 *Checkout Page*
-![Image of Checkout Mobile View Page](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/check_out.png)
+![Image of Checkout Mobile View Page](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/yoda_checkout.png)
 
 **User and User Stories**
 First and foremost, the user is the primary focus of creating any website. The type of user I would expect to view Yoda Design e-commerce app would be as follows:-
