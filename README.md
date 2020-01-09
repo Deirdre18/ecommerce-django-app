@@ -15,8 +15,11 @@ This project is my 4th Milestone Project for Full-Stack Diploma in Software Deve
 The initial idea of creating Yoda Design website originated from my interest in designer made products and as one of the ideas for this project was a design theme. Furthermore my fascination of Yoda in Star Wars and its popularity inspired me to develop an Ecommerce app with a design theme - [StarWars Website](https://www.starwars.com/databank/yoda).
 
 ### - Blob Images
+
+*Products Page*
 ![Image of Products Page/Home Page](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/products.png)
 
+*Checkout Page*
 ![Image of Checkout Mobile View Page](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/Checkout.png)
 
 **User and User Stories**
