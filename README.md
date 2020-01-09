@@ -74,7 +74,7 @@ The surface, or the skin is the interface for which visitors will engage with th
 ### **Features left out which could be implemented in future versions**
 
 - Search functionality could be expanded to include the first 3 characters of a product when users search.
-- A share on social media button could be added.
+- A share on social media button for individual products and a 'like' button could be added.
 - An incremental chart/user dashboard of votes (ascending and descending) could be implemented to show which features are most popular.
 - More products could be added and pagination used or 'more' button to view all products.
 
@@ -84,6 +84,10 @@ The surface, or the skin is the interface for which visitors will engage with th
 After some time testing both debug and alternating deployment in production mode, I was able to understand how static files worked in both modes. In production mode, debug should be off for security reasons, however this then can cause conflict with displaying static and media files. As I installed Whitenoise, I added ''whitenoise.runserver_nostatic'in my installed apps in settings.py. I refered to [Whitenoise]("http://whitenoise.evans.io/en/stable/django.html"). This meant that static file handling was taken over by Whitenoise instead of Django and so I could view static files in production mode locally. However when I deployed to Heroku, an error occurred saying that I should add DISABLE_COLLECTATIC=1 into config variables in Heroku, which I did.  
 
 On further testing I worked out a way to test in debug mode, whilst commenting out STATIC_ROOT = os.path.join(BASE_DIR, 'static') in base.html file, and uncommenting it when deploying to Heroku. In this way I can test in debug mode and view all static and media files and deploy to Heroku confident that static/media files will be displayed in production mode.
+
+### - Interesting Bugs found in testing
+
+On having someone test the Yoda Design e-commerce app, it was found that if a user tried to add an item to a shopping cart, without selecting a quantity, it came up with a 500 server error, assumably as no item was selected and an 'integer' as required.
 
 ### - Django Built-in Tests
 
@@ -105,7 +109,6 @@ Travis Continuous Integration has been passing tests since I first started this 
 ### - Manual testing of functionality
 
 Manually tested login, register, add products to cart, view blogs, profile and login status, search bar.
-
 
 - Wrong password -
 
