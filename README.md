@@ -24,7 +24,7 @@ First and foremost, the user is the primary focus of creating any website. The t
 
 - Someone who loves Star Wars.
 - Someone interested in the character of Yoda and Baby Yoda.
-- Someone who follows the trilogies and is an advant fan of Star Wars.
+- Someone who follows the trilogies and is an advant fan of StarWars.
 - A child, teenager, adult.
 - Student (studying science, space, coding, film, science fantasy).
 - Anyone interested in space frontier fantasy movies and characters.
@@ -48,20 +48,17 @@ The strategy is concerned with the goal of the project, which is to create a use
 The tasks that can be accomplished on Yoda Design e-commerce app involve all CRUD functions - therefore the user will be able to interact as stated above. CRUD is an acrynom standing for (create, read, update and delete) - [What is CRUD?](https://www.codecademy.com/articles/what-is-crud). The website uses Django, which is Django is a high-level Python Web framework that is fast, powerful and security focused built by developers for developers, in addition to being free and open source. As much code is reused and refactored it makes web app development speedier.
 
 ### - Structure (Plan or Flow of Interactions)
-
 This is the plan or flow of interactions users will take to navigate and understand Yoda Design e-commerce website. I considered my database structure and detail below in the **database** section, the schemata of models used for the Yoda Design e-commerce website.
 
 ### - Skeleton
-
 In this section, I tried to place the elements in appropriate places, and in a logical order – such as navbar, body with products then individual pages such as login, register, logout, profile, blog posts, cart, checkout and ideas. The website made good logic and was easy to navigate, and each page contains a search button. I took screenshots of the various views, which are inclued in this README.
 
 ### - Surface
-
 The surface, or the skin is the interface for which visitors will engage with the dashboard. I kept the color scheme congruent, using vibrant and zazzy colors (dark pink for navbar and footer and lighter shade of pink for background, so the website was a mixture of pink and white with shades of grey (grey button, etc) throughout. The colours were complimentary. I felt the color scheme was congruent and created a good look and feel and that it was appropriate to a designer themed e-commerce website.
 
-### Features Overview
+## Features Overview
 
-## **Existing Features**
+### **Existing Features**
 
 - Congruent Color Scheme (Pink and White and shades of grey) with white highlighting.
 - User login and register features. Messages sent for successful login and registering.
@@ -74,7 +71,7 @@ The surface, or the skin is the interface for which visitors will engage with th
 - Throughout the website there are links to home/index page which is the products page.
 - Users can connect to social media by clicking on links in footer.
 
-## **Features left out which could be implemented in future versions**
+### **Features left out which could be implemented in future versions**
 
 - Search functionality could be expanded to include the first 3 characters of a product when users search.
 - A share on social media button could be added.
@@ -134,49 +131,9 @@ Tested STRIP payments on checkout using testing card 42424242424242 CVV 111 (or 
 
 ### Results from Postgress Database Schema Explorer in heroku
 
-**products_prodct**                 **auth_user**
-------------------------            -------------------------------
-description |    text                date_joined  |   timestamptz
-id          |    int4                email        |   varchar
-image       |    varchar             first_name   |   varchar
-name        |    varchar             id           |   int4
-price       |    numeric             is_active    |   bool
-                                    is_staff      |   bool
-                                    is_superuser  |   bool
-                                    last_login    |   timestamptz
-                                    last_name     |   varchar
-                                    password      |   varchar
-                                    username      |   varchar
+![PostgresSQL schemata tables](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/postgress%20data_schemata.png)
 
-**django_admin_log**                  **django_session**
-action_flag           int2            expire_date   timestamptz
-action_time           timestamptz     session_data  text
-change_message        text            session_key   varchar
-content_type_id       int4
-id                    int4
-object_id             text
-object_repr           varchar
-user_id               int4
-
-**checkout_order**                    **posts**
-country               varchar         content           text
-county                varchar         created_date      timestamptz
-date                  date            id                int4
-full_name             varchar         order_id          int4
-id                    int4            product_id        int4
-phone_number          varchar         quantity          int4
-postcode              varchar
-street_address        1varchar
-street_address        2varchar
-town_or_city          varchar
-
-**checkout_orderlineitem**
-id                int4
-image             varchar
-published_date    timestamptz
-tag               varchar
-title             varchar
-views             int4
+![PostgresSQL schemata tables1](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/postgress%20data_schemata1.png)
 
 ### **Technologies used includes:**
 - **HTML5**, **CSS3**, **Javascript**, **JQuery**, **Bootstrap**, **Python**, **Django**, **PostgresSQL**, **SQLite3**
@@ -256,8 +213,8 @@ The steps I took to develop this project are as follows:-
 30) pip3 install psycopg2
 31) python3 manage.py collectstatic (if AWS S3 bucket used)
 32) pip3 install gunicorn
-33) add Procfile to instruct heroku that Django and Python are to be used
-34) to use postgress db, add it in heroku dashboard and update code.
+33) add Procfile so that server on Heroku uses Python and Django
+34) to use postgress db, add it in heroku dashboard and update code
 
 **NB: the above code can be run using 'python3 manage.py runserve'. If deploying for product please make sure debug=false and when testing turn debug=true and uncomment line 128 in settings.py file. In addition for every installation update requirements.txt (pip3 freeze > requirements.txt). After creating new apps (home, search, products, posts, etc) always do python3 manage.py make migrations and python3 manage.py migrate.**
 
