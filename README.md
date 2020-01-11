@@ -8,6 +8,7 @@
 [View Project](https://yoda-design.herokuapp.com/)
 
 ## **Purpose of Project**
+
 This project is my 4th Milestone Project for Full-Stack Diploma in Software Development. It is a Django Project and the final project for completion of this course. The project uses Python3.6, Django, HTML5, CSS3, Boostrap forms, Bootstrap 4.3.1, Javascript, SQLite3, Postgress DB and Heroku platform for deployment. The purpose of this project is create an Ecommerce project for a  design start-up (Yoda Design) where users can view a products and suggest their own ideas under a designated 'ideas' tab on the navbar. Furthermore users have complete control of their transactions from adding items to cart to checkout and amending items. In addition, users can vote up or down their favorite ideas and popular ideas will be implemented in future versions of the e-commerce store, subject to sales performance.
 
 ## **UX Design**
@@ -23,6 +24,7 @@ The initial idea of creating Yoda Design website originated from my interest in 
 ![Image of Checkout Mobile View Page](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/yoda_checkout.png)
 
 **User and User Stories**
+
 First and foremost, the user is the primary focus of creating any website. The type of user I would expect to view Yoda Design e-commerce app would be as follows:-
 
 - Someone who loves Star Wars.
@@ -91,12 +93,10 @@ After some time testing both debug and alternating deployment in production mode
 On further testing I worked out a way to test in debug mode, whilst commenting out STATIC_ROOT = os.path.join(BASE_DIR, 'static') in base.html file, and uncommenting it when deploying to Heroku. In this way I can test in debug mode and view all static and media files and deploy to Heroku confident that static/media files will be displayed in production mode.
 
 ### - Interesting Bugs found in testing
-
 On having someone test the Yoda Design e-commerce app, it was found that if a user tried to add an item to a shopping cart, without selecting a quantity, it came up with a 500 server error, assumably as no item was selected and an 'integer' as required.
 
 ### - Django Built-in Tests
-
-I tested products by running 'python3 manage.py test products', which successfully passed.
+- I tested products by running 'python3 manage.py test products', which successfully passed.
 
 <table>
     <tr>
@@ -108,11 +108,9 @@ I tested products by running 'python3 manage.py test products', which successful
 </table>
 
 ### - Travis Testing
-
-I used [Travis Continuous Integration](https://travis-ci.org/) and all tests passed, since I first started this project. The Travis link is at the top of this README. I have found it very useful in aligning integrated testing during development.
+- I used [Travis Continuous Integration](https://travis-ci.org/) and all tests passed, since I first started this project. The Travis link is at the top of this README. I have found it very useful in aligning integrated testing during development.
 
 ### - Manual testing of functionality
-
 Manually tested login, register, add products to cart, view blogs, profile and login status, search bar.
 
 - Wrong password
@@ -130,12 +128,10 @@ Manually tested login, register, add products to cart, view blogs, profile and l
 - Voting for new ideas
 
 ### - Developer tools testing
-
-Used Chrome and Firefox developer tools to view app in responsive mode and debug throughout developing this project. I tested this project on iPhone 6/7/8, Galaxy S9/S9+, iPad, iPhone 6/7/8 Plus, iPhone X/XS, Kindle Fire HDX and on medium and large screen sizes.
+- Used Chrome and Firefox developer tools to view app in responsive mode and debug throughout developing this project. I tested this project on iPhone 6/7/8, Galaxy S9/S9+, iPad, iPhone 6/7/8 Plus, iPhone X/XS, Kindle Fire HDX, LG Optimus L70, MS Luma 550, MS Lumia 950, Nexus10, Laptop HiDPl, Laptop MDPl, Pixel2, Pixel2 XL.
 
 ### - Testing STRIPE
-
-Tested STRIP payments on checkout using testing card 42424242424242 CVV 111 (or any 3 digits). This worked and got message saying "You have successfully paid". On trying other varients of testing card number I got some interesting messages. Instead of inputting the 16 digit test card number, if I put in the same numbers but had 19 digits, I got no messages displayed but got email from STRIPE saying that the charging  API used for testing purposes doesn't cover SCA (strong customer authentication) and as such testing doesn't support SCA or 2-factor authentication. The STRIPE developers website is here [STRIPE FOR DEVELOPERS](https://stripe.dev/)
+- Tested STRIP payments on checkout using testing card 42424242424242 CVV 111 (or any 3 digits). This worked and got message saying "You have successfully paid". On trying other varients of testing card number I got some interesting messages. Instead of inputting the 16 digit test card number, if I put in the same numbers but had 19 digits, I got no messages displayed but got email from STRIPE saying that the charging  API used for testing purposes doesn't cover SCA (strong customer authentication) and as such testing doesn't support SCA or 2-factor authentication. The STRIPE developers website is here [STRIPE FOR DEVELOPERS](https://stripe.dev/)
 
 ## **Databse schema**:
 
@@ -167,7 +163,9 @@ Base languages used to create website.
 
 - **Postgress Database** which was added on Heroku dashboard - [PostgresSQL Database](https://www.postgresql.org/)
 
-- **SQLite3 Database** initially when developing the project and later reverted to PostgresSQL - [SQLite3](https://www.sqlite.org/version3.html)
+- **SQLite3 Database** was used initially when developing the project and I later reverted to PostgresSQL, which was added in Heroku Dashboard - [SQLite3](https://www.sqlite.org/version3.html)
+
+- **Heroku** which is a free cloud platform was used for deployment  [Heroku](https://id.heroku.com/login)
 
 ## **Version Control (GitHub)**
 
@@ -175,7 +173,7 @@ I continuously pushed to GitHub with useful comments in every commit. It was the
 
 ## **Deployment**
 
-I deployed this project to Heroku Platform - I used Heroku to deploy my project [Heroku](https://dashboard.heroku.com), which is a free cloud based platform. I provisioned PosgressSQL add-on (free hobby version) on Heroku. I connected my deployment to GitHub, so that whenever I pushed to GitHub, the deployed app was also updated to the current version. In Heroku, I configured variables, such as:-
+I deployed this project to Heroku Platform - I used Heroku to deploy my project [Heroku](https://id.heroku.com/login), which is a free cloud based platform. I provisioned PosgressSQL add-on (free hobby version) on Heroku. I connected my deployment to GitHub, so that whenever I pushed to GitHub, the deployed app was also updated to the current version. In Heroku, I configured variables, such as:-
 
 - SECRET_KEY,
 - STRIPE_PUBLISHABLE,
@@ -192,7 +190,8 @@ I developed this project using Atom text editor, which worked very well and had 
 The steps I took to develop this project are as follows:-
 
 **The steps I took to create this project and how to run this project.**
-*NOTE THAT I REUSED THE 'ACCOUNTS' APP CREATED FROM INITIAL TUTORIAL*
+
+*PLEASE NOTE THAT I REUSED THE 'ACCOUNTS' APP CREATED FROM CODE INSTITUTE VIDEO TUTORIAL*
 
 1)  mkdir ~/e-commerce
 2)  cd ./e-commerce
@@ -229,7 +228,7 @@ The steps I took to develop this project are as follows:-
 33) add Procfile so that server on Heroku uses Python and Django
 34) to use postgress db, add it in heroku dashboard and update code
 
-**NB: the above code can be run using 'python3 manage.py runserve'. If deploying for production, please make sure debug=false and when testing turn debug=true and uncomment line 128 in settings.py file. In addition for every installation update requirements.txt (pip3 freeze > requirements.txt). After creating new apps (home, search, products, posts, etc), always migrate usiing python3 manage.py makemigrations and python3 manage.py migrate.**
+The above code can be run using 'python3 manage.py runserve'. If deploying for production, please make sure debug=false and when testing turn debug=true and uncomment line 128 in settings.py file. In addition for every installation update requirements.txt (pip3 freeze > requirements.txt). After creating new apps (home, search, products, posts, etc), always migrate usiing python3 manage.py makemigrations and python3 manage.py migrate.**
 
 ## **Difficulties I came across**
 
