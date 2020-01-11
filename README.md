@@ -45,19 +45,19 @@ As per previous projects I completed, for direction in UX design I referred to w
 ***GARRET'S FIVE PLANS OF UX DESIGN:-***
 
 ### - Strategy (The goal)
-The strategy is concerned with the goal of the project, which is to create a user friendly, easily navigational, interactive e-commerce app for Yoda designer products. As a user I wish to interact with the app, by being able to view, login, register, logout, view blog posts (but not add one), add products to shopping cart, delete and amend products, checkout and pay with credit/debit card, suggest ideas and vote up/down for ideas. CRUD functions are demonstratable throughout the project.
+- The strategy is concerned with the goal of the project, which is to create a user friendly, easily navigational, interactive e-commerce app for Yoda designer products. As a user I wish to interact with the app, by being able to view, login, register, logout, view blog posts (but not add one), add products to shopping cart, delete and amend products, checkout and pay with credit/debit card, suggest ideas and vote up/down for ideas. CRUD functions are demonstratable throughout the project.
 
 ### - Scope (What tasks can be done)
-The tasks that can be accomplished on Yoda Design e-commerce app involve all CRUD functions - therefore the user will be able to interact as stated above. CRUD is an acrynom standing for (create, read, update and delete) - [What is CRUD?](https://www.codecademy.com/articles/what-is-crud). The website uses Django, which is Django is a high-level Python Web framework that is fast, powerful and security focused built by developers for developers, in addition to being free and open source. As much code is reused and refactored it makes web app development speedier.
+- The tasks that can be accomplished on Yoda Design e-commerce app involve all CRUD functions - therefore the user will be able to interact as stated above. CRUD is an acrynom standing for (create, read, update and delete) - [What is CRUD?](https://www.codecademy.com/articles/what-is-crud). The website uses Django, which is Django is a high-level Python Web framework that is fast, powerful and security focused built by developers for developers, in addition to being free and open source. As much code is reused and refactored it makes web app development speedier.
 
 ### - Structure (Plan or Flow of Interactions)
-This is the plan or flow of interactions users will take to navigate and understand Yoda Design e-commerce website. I considered my database structure and detail below in the **database** section, the schemata of models used for the Yoda Design e-commerce website.
+- This is the plan or flow of interactions users will take to navigate and understand Yoda Design e-commerce website. I considered my database structure and detail below in the **database** section, the schemata of models used for the Yoda Design e-commerce website.
 
 ### - Skeleton
-In this section, I tried to place the elements in appropriate places, and in a logical order – such as navbar, body with products then individual pages such as login, register, logout, profile, blog posts, cart, checkout and ideas. The website made good logic and was easy to navigate, and each page contains a search button. I took screenshots of the various views, which are inclued in this README.
+- In this section, I tried to place the elements in appropriate places, and in a logical order – such as navbar, body with products then individual pages such as login, register, logout, profile, blog posts, cart, checkout and ideas. The website made good logic and was easy to navigate, and each page contains a search button. I took screenshots of the various views, which are inclued in this README.
 
 ### - Surface
-The surface, or the skin is the interface for which visitors will engage with the dashboard. I kept the color scheme congruent, using vibrant and zazzy colors (dark pink for navbar and footer and lighter shade of pink for background, so the website was a mixture of pink and white with shades of grey (grey button, etc) throughout. The colours were complimentary. I felt the color scheme was congruent and created a good look and feel and that it was appropriate to a designer themed e-commerce website.
+- The surface, or the skin is the interface for which visitors will engage with the dashboard. I kept the color scheme congruent, using vibrant and zazzy colors (dark pink for navbar and footer and lighter shade of pink for background, so the website was a mixture of pink and white with shades of grey (grey button, etc) throughout. The colours were complimentary. I felt the color scheme was congruent and created a good look and feel and that it was appropriate to a designer themed e-commerce website.
 
 ## Features Overview
 
@@ -115,17 +115,19 @@ I used [Travis Continuous Integration](https://travis-ci.org/) and all tests pas
 
 Manually tested login, register, add products to cart, view blogs, profile and login status, search bar.
 
-- Wrong password -
+- Wrong password
 
-- Wrong or non-existent Username -
+- Wrong or non-existent Username
 
-- Logged Out -
+- Logged Out
 
-- Registered -
+- Registered
 
-- Login -
+- Login
 
-- Search -
+- Search
+
+- Voting for new ideas
 
 ### - Developer tools testing
 
@@ -144,29 +146,28 @@ Tested STRIP payments on checkout using testing card 42424242424242 CVV 111 (or 
 ![PostgresSQL schemata tables1](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/postgress%20data_schemata1.png)
 
 ### **Technologies used includes:**
-- **HTML5**, **CSS3**, **Javascript**, **JQuery**, **Bootstrap**, **Python**, **Django**, **PostgresSQL**, **SQLite3**
 
 Base languages used to create website.
 
-Used **HTML5** to handle page routing and to build custom directives - [HTML5](https://www.html5rocks.com/en/)
+- **HTML5** to handle page routing and to build custom directives - [HTML5](https://www.html5rocks.com/en/)
 
-Used **Font Awesome** icons to give our project an intuitive 'google style'look and feel - [FONT AWESOME 4.7.0](https://fontawesome.com/v4.7.0/)
+- **Font Awesome** icons to give our project an intuitive 'google style'look and feel - [FONT AWESOME 4.7.0](https://fontawesome.com/v4.7.0/)
 
-Used **CSS3** for styling and enhancing the look of the website - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3)
+- **CSS3** for styling and enhancing the look of the website - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3)
 
-Used **Javascript** (minified versions) added end of document - [JAVASCRIPT](https://developer.mozilla.org/bm/docs/Web/JavaScript)
+- **Javascript** (minified versions) added end of document - [JAVASCRIPT](https://developer.mozilla.org/bm/docs/Web/JavaScript)
 
-Used **JQuery** to trigger STRIP at checkout of shopping cart - [JQUERY](https://jquery.com/)
+- **JQuery** to trigger STRIP at checkout of shopping cart - [JQUERY](https://jquery.com/)
 
-Used **Bootstrap 4.3.1** to add styling to forms and to the e-commerce app generally - [BOOTSTRAP](https://stackpath.bootstrapcdn.com/bootstrap/)
+- **Bootstrap 4.3.1** to add styling to forms and to the e-commerce app generally - [BOOTSTRAP](https://stackpath.bootstrapcdn.com/bootstrap/)
 
-Used **Python 3.6.9** in a virtual environment for developing this project - [PYTHON](https://docs.python.org/3/)
+- **Python 3.6.9** in a virtual environment for developing this project - [PYTHON](https://docs.python.org/3/)
 
-Used **Django 11.1.23** for developing this project - [Django](https://www.djangoproject.com/)
+- **Django 11.1.23** for developing this project - [Django](https://www.djangoproject.com/)
 
-Used **Postgress Database** which was added on Heroku dashboard - [PostgresSQL Database](https://www.postgresql.org/)
+- **Postgress Database** which was added on Heroku dashboard - [PostgresSQL Database](https://www.postgresql.org/)
 
-Used **SQLite3 Database** initially when developing the project and later reverted to PostgresSQL - [SQLite3](https://www.sqlite.org/version3.html)
+- **SQLite3 Database** initially when developing the project and later reverted to PostgresSQL - [SQLite3](https://www.sqlite.org/version3.html)
 
 ## **Version Control (GitHub)**
 
@@ -174,7 +175,13 @@ I continuously pushed to GitHub with useful comments in every commit. It was the
 
 ## **Deployment**
 
-I deployed this project to Heroku Platform - I used Heroku to deploy my project [Heroku](https://dashboard.heroku.com), which is a free cloud based platform. I provisioned PosgressSQL add-on (free hobby version) on Heroku. I connected my deployment to GitHub, so that whenever I pushed to GitHub, the deployed app was also updated to the current version. In Heroku, I configured variables, such as SECRET_KEY, STRIPE_PUBLISHABLE, STRIPE_SECRET, DISABLE_COLLECTSTATIC=1, DJ_DATABASE_URL.
+I deployed this project to Heroku Platform - I used Heroku to deploy my project [Heroku](https://dashboard.heroku.com), which is a free cloud based platform. I provisioned PosgressSQL add-on (free hobby version) on Heroku. I connected my deployment to GitHub, so that whenever I pushed to GitHub, the deployed app was also updated to the current version. In Heroku, I configured variables, such as:-
+
+- SECRET_KEY,
+- STRIPE_PUBLISHABLE,
+- STRIPE_SECRET,
+- DISABLE_COLLECTSTATIC=1,
+- DJ_DATABASE_URL.
 
 This project is developed on Heroku Platform - [Yoda Design](https://yoda-design.herokuapp.com/)
 
@@ -222,7 +229,7 @@ The steps I took to develop this project are as follows:-
 33) add Procfile so that server on Heroku uses Python and Django
 34) to use postgress db, add it in heroku dashboard and update code
 
-**NB: the above code can be run using 'python3 manage.py runserve'. If deploying for production, please make sure debug=false and when testing turn debug=true and uncomment line 128 in settings.py file. In addition for every installation update requirements.txt (pip3 freeze > requirements.txt). After creating new apps (home, search, products, posts, etc) always do python3 manage.py make migrations and python3 manage.py migrate.**
+**NB: the above code can be run using 'python3 manage.py runserve'. If deploying for production, please make sure debug=false and when testing turn debug=true and uncomment line 128 in settings.py file. In addition for every installation update requirements.txt (pip3 freeze > requirements.txt). After creating new apps (home, search, products, posts, etc), always migrate usiing python3 manage.py makemigrations and python3 manage.py migrate.**
 
 ## **Difficulties I came across**
 
@@ -230,13 +237,13 @@ I encountered difficulty using STRIPE at one point, as I had changed base.html f
 
 ## **Credits/Acknowledgement**
 
-I give credit to fellow student (Lucas Suarez), particularly for using the 'suggestions'(ideas) code, which was directly copied into my project from his GitHub repository. I reused all the 'suggestions' code and added an 'ideas' link in my navbar - [Django-tech-ecommerce](https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app).
+- I give credit to fellow student (Lucas Suarez), particularly for using the 'suggestions'(ideas) code, which was directly copied into my project from his GitHub repository. I reused all the 'suggestions' code and added an 'ideas' link in my navbar - [Django-tech-ecommerce](https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app).
 
-I also give credit to fellow student (Deborah Thompson) for general support and some guidance, and for looking at her project to get a good sense of layout for some pages (ie) profile page - [Maths Revision](Maths Revision](https://github.com/debbiect246/mathsplusrevision)
+- I also give credit to fellow student (Deborah Thompson) for general support and some guidance, and for looking at her project to get a good sense of layout for some pages (ie) profile page - [Maths Revision](Maths Revision](https://github.com/debbiect246/mathsplusrevision)
 
-I also give credit to Code Institute for their solutions on GitHub, which helped me get this project off the ground - [GitHubSolutions](https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app)
+- I also give credit to Code Institute for their solutions on GitHub, which helped me get this project off the ground - [GitHubSolutions](https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app)
 
-I also give thanks to my fellow students on Slack Community who were very supportive - [Slack](https://slack.com/intl/en-ie/)
+- I also give thanks to my fellow students on Slack Community who were very supportive - [Slack](https://slack.com/intl/en-ie/)
 
 ## **Content**
 
@@ -258,17 +265,17 @@ I also referred to [W3Schools](https://www.w3schools.com/) and also on occasion 
 
 I referred to the following websites for project images:-
 
-[Yoda Mousepad](https://www.amazon.com/Abystyle-STAR-WARS-Mousepad-Yoda/dp/B01BFGCJ38)
+- [Yoda Mousepad](https://www.amazon.com/Abystyle-STAR-WARS-Mousepad-Yoda/dp/B01BFGCJ38)
 
-[Mandalorian products](https://money.com/baby-yoda-toys-t-shirt-mandalorian-disney-plus/)
+- [Mandalorian products](https://money.com/baby-yoda-toys-t-shirt-mandalorian-disney-plus/)
 
-[Baby Yoda Dolls](https://www.eonline.com/news/1099401/baby-yoda-dolls-are-here-but-there-s-a-catch)
+- [Baby Yoda Dolls](https://www.eonline.com/news/1099401/baby-yoda-dolls-are-here-but-there-s-a-catch)
 
-[Yoda Lego set](https://www.lego.com/en-us/kids/sets/star-wars/yoda-495867f9321e4189a2e241fc88bafd3e)
+- [Yoda Lego set](https://www.lego.com/en-us/kids/sets/star-wars/yoda-495867f9321e4189a2e241fc88bafd3e)
 
-[Yoda gifts on Amazon](https://www.amazon.com/slp/yoda-gifts/7hw5autakufk8oo)
+- [Yoda gifts on Amazon](https://www.amazon.com/slp/yoda-gifts/7hw5autakufk8oo)
 
-[StarWars Products](https://www.liveabout.com/yoda-in-star-wars-2957947)
+- [StarWars Products](https://www.liveabout.com/yoda-in-star-wars-2957947)
 
 ## Licence
 Copyright (c) Deirdre Weldon
