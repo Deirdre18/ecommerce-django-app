@@ -2,16 +2,16 @@
 {% block content %}
 {% for post in posts %}
 <div class="row">
-  <div class="col-md-2 col-sm-3 text-center">
+  <div class="col-md-2 col-sm-3 text-center" style="margin-top:20px">
     <a class="story-img" href="#">
     </a>
     <p><span class=" boldtext">Author:</span> Admin</p>
   </div>
-  <div class="col-md-10 col-sm-9">
-    <h3><strong>{{ post.title }}</strong></h3>
+  <div class=" col-md-10 col-sm-9" style="margin-top:20px">
+    <h3 class="post"><strong>{{ post.title }}</strong></h3>
     <div class=" row">
-      <div class="col-xs-9" style="margin-left:30px;margin-right:30px;background-color:pink">
-        <p>{{ post.content|truncatewords:30 }}</p>
+      <div class=" col-xs-9" style="margin-left:30px;margin-right:30px;background-color:pink">
+        <p class="content">{{ post.content|truncatewords:30 }}</p>
         <p><a href="{% url 'post_detail' post.id %}" class="btn btn-dark rounded-0">Read more</a></p>
         <p><span class="boldtext">Published on:</span> {{ post.published_date }} </p>
         <p><span class="boldtext">Views:</span> {{post.views}}</p>

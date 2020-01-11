@@ -107,7 +107,7 @@ I tested products by running 'python3 manage.py test products', which successful
 
 ### - Travis Testing
 
-Travis Continuous Integration has been passing tests since I first started this project. The Travis link is at the top of README. I have found it very useful in aligning integrated testing with development.
+I used [Travis Continuous Integration](https://travis-ci.org/) and all tests passed, since I first started this project. The Travis link is at the top of this README. I have found it very useful in aligning integrated testing with development. 
 
 ### - Manual testing of functionality
 
