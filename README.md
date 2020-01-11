@@ -63,23 +63,25 @@ The surface, or the skin is the interface for which visitors will engage with th
 
 ### **Existing Features**
 
-- Congruent Color Scheme (Pink and White and shades of grey) with white highlighting.
-- User login and register features. Messages sent for successful login and registering.
-- Routing to relevant pages by clicking on navbar links.
-- Adding ideas feature and up/down voting of ideas, adding items to shopping card, checking-out (users must be logged in for this feature), amending order items, viewing profile (which welcomes user and shows their details).
-- Website and images are responsive across all mobile devices, as detailed under **Testing** section below.
-- Search bar to search for recipes using keyword or full product name.
-- I added a favicon feature - [Favicon](https://www.flaticon.com/)
-- Users can 'Vote up/down' a new product idea they themselves or others added.
-- Throughout the website there are links to home/index page which is the products page.
-- Users can connect to social media by clicking on links in footer.
+- Existing features as listed here:
+    - Congruent Color Scheme (Pink and White and shades of grey) with white highlighting.
+    - User login and register features. Messages sent for successful login and registering.
+    - Routing to relevant pages by clicking on navbar links.
+    - Adding ideas feature and up/down voting of ideas, adding items to shopping card, checking-out (users must be logged in for this feature), amending order items, viewing profile (which welcomes user and shows their details).
+    - Website and images are responsive across all mobile devices, as detailed under **Testing** section below.
+    - Search bar to search for recipes using keyword or full product name.
+    - I added a favicon feature - [Favicon](https://www.flaticon.com/)
+    - Users can 'Vote up/down' a new product idea they themselves or others added.
+    - Throughout the website there are links to home/index page which is the products page.
+    - Users can connect to social media by clicking on links in footer.
 
 ### **Features left out which could be implemented in future versions**
 
-- Search functionality could be expanded to include the first 3 characters of a product when users search.
-- A share on social media button for individual products and a 'like' button could be added.
-- An incremental chart/user dashboard of votes (ascending and descending) could be implemented to show which features are most popular.
-- More products could be added and pagination used or 'more' button to view all products.
+- Other features that could be implemented as listed here:
+    - Search functionality could be expanded to include the first three characters of a product when users search.
+    - A share on social media button for individual products and a 'like' button could be added.
+    - An incremental chart/user dashboard of votes (ascending and descending) could be implemented to show which features are most popular.
+    - More products could be added and pagination used or 'more' button to view all products.
 
 ## **Testing**
 
@@ -107,7 +109,7 @@ I tested products by running 'python3 manage.py test products', which successful
 
 ### - Travis Testing
 
-I used [Travis Continuous Integration](https://travis-ci.org/) and all tests passed, since I first started this project. The Travis link is at the top of this README. I have found it very useful in aligning integrated testing with development. 
+I used [Travis Continuous Integration](https://travis-ci.org/) and all tests passed, since I first started this project. The Travis link is at the top of this README. I have found it very useful in aligning integrated testing during development.
 
 ### - Manual testing of functionality
 
@@ -182,8 +184,6 @@ I developed this project using Atom text editor, which worked very well and had 
 
 The steps I took to develop this project are as follows:-
 
-**Please note that the project was originally created from the Code Institute tutorials and renamed to 'Yoda Design'.** Further design and development was done to the basic structure of the project, as outlined in this README.
-
 **The steps I took to create this project and how to run this project.**
 *NOTE THAT I REUSED THE 'ACCOUNTS' APP CREATED FROM INITIAL TUTORIAL*
 
@@ -222,7 +222,7 @@ The steps I took to develop this project are as follows:-
 33) add Procfile so that server on Heroku uses Python and Django
 34) to use postgress db, add it in heroku dashboard and update code
 
-**NB: the above code can be run using 'python3 manage.py runserve'. If deploying for product please make sure debug=false and when testing turn debug=true and uncomment line 128 in settings.py file. In addition for every installation update requirements.txt (pip3 freeze > requirements.txt). After creating new apps (home, search, products, posts, etc) always do python3 manage.py make migrations and python3 manage.py migrate.**
+**NB: the above code can be run using 'python3 manage.py runserve'. If deploying for production, please make sure debug=false and when testing turn debug=true and uncomment line 128 in settings.py file. In addition for every installation update requirements.txt (pip3 freeze > requirements.txt). After creating new apps (home, search, products, posts, etc) always do python3 manage.py make migrations and python3 manage.py migrate.**
 
 ## **Difficulties I came across**
 
