@@ -9,13 +9,13 @@
 
 ## **Purpose of Project**
 
-This project is my 4th Milestone Project for Full-Stack Diploma in Software Development. It is a Django Project and the final project for completion of this course. The project uses Python3.6, Django, HTML5, CSS3, Boostrap forms, Bootstrap 4.3.1, Javascript, SQLite3, Postgress DB and Heroku platform for deployment. The purpose of this project is create an Ecommerce project for a  design start-up (Yoda Design) where users can view a products and suggest their own ideas under a designated 'ideas' tab on the navbar. Furthermore users have complete control of their transactions from adding items to cart to checkout and amending items. In addition, users can vote up or down their favorite ideas and popular ideas will be implemented in future versions of the e-commerce store, subject to sales performance.
+This project is my 4th Milestone Project for Full-Stack Diploma in Software Development. It is a Django Project and the final project for completion of this course. The project uses Python3.6, Django, HTML5, CSS3, Boostrap forms, Bootstrap 4.3.1, Javascript, SQLite3, Postgress DB and Heroku platform for deployment. The purpose of this project is create an Ecommerce project for a  design start-up (Yoda Design) where users can view a products and suggest their own ideas under a designated 'ideas' tab on the navbar. Furthermore users have complete control of their transactions from adding items to cart to checkout and amending items. In addition, users can vote up their favorite ideas and the most popular ideas will be implemented in future versions of the e-commerce online store, subject to sales performance.
 
 ## **UX Design**
 
 The initial idea of creating Yoda Design website originated from my interest in designer made products and as one of the ideas for this project was a design theme. Furthermore my fascination of Yoda in Star Wars and its popularity inspired me to develop an Ecommerce app with a design theme - [StarWars Website](https://www.starwars.com/databank/yoda).
 
-### - Blob Images
+### Blob Images
 
 *Products Page*
 ![Image of Products Page/Home Page](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/yoda_products.png)
@@ -47,7 +47,7 @@ As per previous projects I completed, for direction in UX design I referred to w
 ***GARRET'S FIVE PLANS OF UX DESIGN:-***
 
 ### - Strategy (The goal)
-- The strategy is concerned with the goal of the project, which is to create a user friendly, easily navigational, interactive e-commerce app for Yoda designer products. As a user I wish to interact with the app, by being able to view, login, register, logout, view blog posts (but not add one), add products to shopping cart, delete and amend products, checkout and pay with credit/debit card, suggest ideas and vote up/down for ideas. CRUD functions are demonstratable throughout the project.
+- The strategy is concerned with the goal of the project, which is to create a user friendly, easily navigational, interactive e-commerce app for Yoda designer products. As a user I wish to interact with the app, by being able to view, login, register, logout, view blog posts (but not add one), add products to shopping cart, delete and amend products, checkout and pay with credit/debit card, suggest ideas and vote up ideas. CRUD functions are demonstratable throughout the project.
 
 ### - Scope (What tasks can be done)
 - The tasks that can be accomplished on Yoda Design e-commerce app involve all CRUD functions - therefore the user will be able to interact as stated above. CRUD is an acrynom standing for (create, read, update and delete) - [What is CRUD?](https://www.codecademy.com/articles/what-is-crud). The website uses Django, which is Django is a high-level Python Web framework that is fast, powerful and security focused built by developers for developers, in addition to being free and open source. As much code is reused and refactored it makes web app development speedier.
@@ -69,11 +69,11 @@ As per previous projects I completed, for direction in UX design I referred to w
     - Congruent Color Scheme (Pink and White and shades of grey) with white highlighting.
     - User login and register features. Messages sent for successful login and registering.
     - Routing to relevant pages by clicking on navbar links.
-    - Adding ideas feature and up/down voting of ideas, adding items to shopping card, checking-out (users must be logged in for this feature), amending order items, viewing profile (which welcomes user and shows their details).
+    - Adding ideas feature and up-voting of ideas, adding items to shopping card, checking-out (users must be logged in for this feature), amending order items, viewing profile (which welcomes user and shows their details).
     - Website and images are responsive across all mobile devices, as detailed under **Testing** section below.
     - Search bar to search for recipes using keyword or full product name.
     - I added a favicon feature - [Favicon](https://www.flaticon.com/)
-    - Users can 'Vote up/down' a new product idea they themselves or others added.
+    - Users can 'Vote Up' a new product idea they themselves or others added.
     - Throughout the website there are links to home/index page which is the products page.
     - Users can connect to social media by clicking on links in footer.
 
@@ -82,20 +82,21 @@ As per previous projects I completed, for direction in UX design I referred to w
 - Other features that could be implemented as listed here:
     - Search functionality could be expanded to include the first three characters of a product when users search.
     - A share on social media button for individual products and a 'like' button could be added.
-    - An incremental chart/user dashboard of votes (ascending and descending) could be implemented to show which features are most popular.
+    - An incremental chart/user dashboard showing votes could be implemented to show which features are most popular.
     - More products could be added and pagination used or 'more' button to view all products.
+    - A 'down-voting' function, as currently there is only the option to up-vote on this website.
 
 ## **Testing**
 
-### - General Testing
+### General Testing
 After some time testing both debug and alternating deployment in production mode, I was able to understand how static files worked in both modes. In production mode, debug should be off for security reasons, however this then can cause conflict with displaying static and media files. As I installed Whitenoise, I added ''whitenoise.runserver_nostatic'in my installed apps in settings.py. I refered to [Whitenoise]("http://whitenoise.evans.io/en/stable/django.html"). This meant that static file handling was taken over by Whitenoise instead of Django and so I could view static files in production mode locally. However when I deployed to Heroku, an error occurred saying that I should add DISABLE_COLLECTATIC=1 into config variables in Heroku, which I did.  
 
 On further testing I worked out a way to test in debug mode, whilst commenting out STATIC_ROOT = os.path.join(BASE_DIR, 'static') in base.html file, and uncommenting it when deploying to Heroku. In this way I can test in debug mode and view all static and media files and deploy to Heroku confident that static/media files will be displayed in production mode.
 
-### - Interesting Bugs found in testing
+### Interesting Bugs found in testing
 On having someone test the Yoda Design e-commerce app, it was found that if a user tried to add an item to a shopping cart, without selecting a quantity, it came up with a 500 server error, assumably as no item was selected and an 'integer' as required.
 
-### - Django Built-in Tests
+### Django Built-in Tests
 - I tested products by running 'python3 manage.py test products', which successfully passed.
 
 <table>
@@ -107,10 +108,10 @@ On having someone test the Yoda Design e-commerce app, it was found that if a us
     </tr>
 </table>
 
-### - Travis Testing
+### Travis Testing
 - I used [Travis Continuous Integration](https://travis-ci.org/) and all tests passed, since I first started this project. The Travis link is at the top of this README. I have found it very useful in aligning integrated testing during development.
 
-### - Manual testing of functionality
+### Manual testing of functionality
 Manually tested login, register, add products to cart, view blogs, profile and login status, search bar.
 
 - Wrong password
@@ -127,10 +128,10 @@ Manually tested login, register, add products to cart, view blogs, profile and l
 
 - Voting for new ideas
 
-### - Developer tools testing
+### Developer tools testing
 - Used Chrome and Firefox developer tools to view app in responsive mode and debug throughout developing this project. I tested this project on iPhone 6/7/8, Galaxy S9/S9+, iPad, iPhone 6/7/8 Plus, iPhone X/XS, Kindle Fire HDX, LG Optimus L70, MS Luma 550, MS Lumia 950, Nexus10, Laptop HiDPl, Laptop MDPl, Pixel2, Pixel2 XL.
 
-### - Testing STRIPE
+### Testing STRIPE
 - Tested STRIP payments on checkout using testing card 42424242424242 CVV 111 (or any 3 digits). This worked and got message saying "You have successfully paid". On trying other varients of testing card number I got some interesting messages. Instead of inputting the 16 digit test card number, if I put in the same numbers but had 19 digits, I got no messages displayed but got email from STRIPE saying that the charging  API used for testing purposes doesn't cover SCA (strong customer authentication) and as such testing doesn't support SCA or 2-factor authentication. The STRIPE developers website is here [STRIPE FOR DEVELOPERS](https://stripe.dev/)
 
 ## **Databse schema**:

@@ -114,7 +114,7 @@ caption p {
    #myFooter ul {
        list-style-type: none;
        padding-left: 0;
-       line-height: 1;
+       line-height: 1.7;
    }
 
    #myFooter h5 {
@@ -139,7 +139,12 @@ caption p {
    #myFooter a:focus {
        text-decoration: none;
        color: #f9f9f9;
-   };
+   }
+
+   #ideas a:hover,
+   #ideas a:focus {
+       text-decoration: none;
+
    }
 
    #myFooter .social-networks {

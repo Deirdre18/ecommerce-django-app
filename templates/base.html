@@ -1,8 +1,8 @@
 {% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
-<!--for some code on this page, I give credit to fellow student (Lucas Suarez) 'https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app' and I also give credit to Code Institute for their solutions on GitHub -
-https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app-->
+<!--for some code on this page, I give credit to fellow student (Lucas Suarez) 'https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app'-->
+<!--I also give credit to Code Institute for their solutions on GitHub -https://github.com/Code-Institute-Solutions/PuttingItAllTogether-Ecommerce-->
 
 <head>
   <title>Yoda Design</title>
@@ -51,15 +51,6 @@ https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app-->
           <a class="nav-link" href="{% url 'products' %}">Products <span class="sr-only">(current)</span></a>
         </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="{% url 'get_suggestions' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ideas
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="{% url 'get_suggestions' %}">See all Ideas</a>
-            <a class="dropdown-item" href="{% url 'new_suggestion' %}">Add new Idea</a>
-          </div>
-        </li>
-
         <li class="nav-item">
           <a class="nav-link" href="{% url 'get_posts' %}">Blog <span class="sr-only">(current)</span></a>
         </li>
@@ -68,12 +59,24 @@ https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app-->
 
       <ul class="navbar-nav pr-3">
 
-        <!-- Registration Links -->
+        <!-- Sugggestions -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ideas</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+            <a class="nav-link" href="{% url 'get_suggestions' %}">View Ideas</a>
+            {% if user.is_authenticated %}
+            <a class="nav-link" href="{% url 'new_suggestion' %}">Add New Idea</a>
+            {% else %}
+            <a class="nav-link" href="{% url 'login' %}">Add Idea</a>
+            {% endif %}
+          </div>
+        </li>
+
+        <!-- MyAccount -->
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            My Account
-          </a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MyAccount</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             {% if user.is_authenticated %}
             <a class="nav-link" href="{% url 'profile' %}">Profile</a>
@@ -84,10 +87,11 @@ https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app-->
             {% endif %}
           </div>
         </li>
-        <!-- --------------------->
+
+        <!--CART-->
         <li class="nav-item">
           <a class="nav-link" href="{% url 'view_cart' %}">
-            <i class="fas fa-shopping-cart"></i> Cart
+            <i class="fas fa-shopping-cart"></i>Cart
             {% if product_count > 0 %}
             <label class="badge badge-warning">{{ product_count }}</label>
             {% endif %}
@@ -139,7 +143,15 @@ https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app-->
             <li><a href="{% url 'products' %}">Products</a></li>
             <li><a href="{% url 'get_posts' %}">Blog</a></li>
             <li><a href="{% url 'about' %}">About Yoda Design</a></li>
+            <li><a href="{% url 'get_suggestions' %}">View Ideas</li></a>
+            {% if user.is_authenticated %}
+            <li><a href="{% url 'new_suggestion' %}">Add New Idea</li></a>
+            {% else %}
+            <li><a class="nav-link" href="{% url 'login' %}">Add New Idea
+            </li></a>
+            {% endif %}
           </ul>
+
           <div class="social-networks">
             <a href="https://www.twitter.com/" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="https://www.facebook.com/" class="facebook" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -162,11 +174,13 @@ https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app-->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <!-- Make messages close after 4 seconds -->
 
-  <!--  <script>
+
+  <!--I give credit to fellow student (Lucas Suarez) 'https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app'-->
+  <script>
     setTimeout(function() {
       document.getElementById('messages').style.display = 'none';
     }, 4000);
-  </script>-->
+  </script>
 </body>
 
 </html>
