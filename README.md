@@ -25,7 +25,7 @@ The initial idea of creating Yoda Design website originated from my interest in 
 
 ### Wireframes
 
-- Used [Pencil Wireframes](https://pencil.evolus.vn/) to outline design and layout for pages in website.
+Used [Pencil Wireframes](https://pencil.evolus.vn/) to outline design and layout for pages in website.
 
 *Home and Products Page*
 [Home and Products Page](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/Wireframes/home%20and%20products%20page.pdf)
@@ -145,19 +145,19 @@ On having someone test the Yoda Design e-commerce app, it was found that if a us
 ### Manual testing of functionality
 Manually tested login, register, add products to cart, view blogs, profile and login status, search bar.
 
-- Wrong password
+- Login: Wrong username and password - This was tested successfully and user will get the message "Your username or password is incorrect".
 
-- Wrong or non-existent Username
+- Login: Wrong username and right password - Tested successfully, this will result in same message as above.
 
-- Logged Out
+- Login: Right username and wrong password - Tested successfully with same message as above.
 
-- Registered: Tested User Registration Page, which successfully works. User inputs email, username and password. Users then get message saying "you have successfully registered".
+- Log Out: Tested successfully, user will get message "You have succesfully logged out"
 
-- Login
+- Register: Tested successfully, User inputs email, username and password. Users then get message saying "you have successfully registered".
 
-- Search
+- Search: This functionality was tested and works successfully. Users can search for products or blogs on the website.
 
-- Voting for new ideas
+- Voting for new ideas: Users both logged-in and logged-out can vote for new product ideas but only logged-in users can add new ideas, in both the navbar link and link in footer. This has been manually tested and works correctly.
 
 ### Developer tools testing
 - Used Chrome and Firefox developer tools to view app in responsive mode and debug throughout developing this project. I tested this project on iPhone 6/7/8, Galaxy S9/S9+, iPad, iPhone 6/7/8 Plus, iPhone X/XS, Kindle Fire HDX, LG Optimus L70, MS Luma 550, MS Lumia 950, Nexus10, Laptop HiDPl, Laptop MDPl, Pixel2, Pixel2 XL.
