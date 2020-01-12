@@ -120,7 +120,9 @@ Manually tested login, register, add products to cart, view blogs, profile and l
 
 - Logged Out
 
-- Registered
+- Registered: Tested Registration Page and it successfully works. Users get message once registered saying "you have successfully registered".
+
+
 
 - Login
 
