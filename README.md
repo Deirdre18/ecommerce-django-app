@@ -23,6 +23,35 @@ The initial idea of creating Yoda Design website originated from my interest in 
 *Checkout Page*
 ![Image of Checkout Mobile View Page](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/yoda_checkout.png)
 
+### Wireframes
+
+*Home and Products Page*
+[Home and Products Page](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/Wireframes/home%20and%20products%20page.pdf)
+
+*Login Page*
+[Login Page](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/Wireframes/login.pdf)
+
+*Register Page*
+[Register Page](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/Wireframes/register.pdf)
+
+*View Ideas*
+[Register Page](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/Wireframes/view_ideas.pdf)
+
+*Add New Product Idea*
+[Register Page](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/Wireframes/add_product_idea.pdf)
+
+*Blog Posts*
+[Blog Posts](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/Wireframes/blog_posts.pdf)
+
+*Shopping Cart Page*
+[Shopping Cart](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/Wireframes/cart.pdf)
+
+*Checkout Page*
+[Checkout Page](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/Wireframes/checkout_page.pdf)
+
+*About Us Page*
+[About Us]https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/Wireframes/about_us.pdf
+
 **User and User Stories**
 
 First and foremost, the user is the primary focus of creating any website. The type of user I would expect to view Yoda Design e-commerce app would be as follows:-
@@ -120,9 +149,7 @@ Manually tested login, register, add products to cart, view blogs, profile and l
 
 - Logged Out
 
-- Registered: Tested Registration Page and it successfully works. Users get message once registered saying "you have successfully registered".
-
-
+- Registered: Tested User Registration Page, which successfully works. User inputs email, username and password. Users then get message saying "you have successfully registered".
 
 - Login
 
