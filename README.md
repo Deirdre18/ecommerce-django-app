@@ -38,7 +38,7 @@ The initial idea of creating Yoda Design website originated from my interest in 
 [View Ideas](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/Wireframes/view_ideas.pdf)
 
 *Add New Product Idea*
-[Add New Product Idea](hhttps://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/Wireframes/add_idea.pdf)
+[Add New Idea](hhttps://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/Wireframes/add_idea.pdf)
 
 *Blog Posts*
 [Blog Posts](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/Wireframes/blog_posts.pdf)
