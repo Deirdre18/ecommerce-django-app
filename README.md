@@ -25,6 +25,8 @@ The initial idea of creating Yoda Design website originated from my interest in 
 
 ### Wireframes
 
+- Used [Pencil Wireframes](https://pencil.evolus.vn/) to outline design and layout for pages in website.
+
 *Home and Products Page*
 [Home and Products Page](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/Wireframes/home%20and%20products%20page.pdf)
 
@@ -38,7 +40,7 @@ The initial idea of creating Yoda Design website originated from my interest in 
 [View Ideas](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/Wireframes/view_ideas.pdf)
 
 *Add New Product Idea*
-[Add New Idea](hhttps://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/Wireframes/add_idea.pdf)
+[Add New Idea](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/Wireframes/add_idea.pdf)
 
 *Blog Posts*
 [Blog Posts](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/Wireframes/blog_posts.pdf)
@@ -49,8 +51,8 @@ The initial idea of creating Yoda Design website originated from my interest in 
 *Checkout Page*
 [Checkout Page](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/Wireframes/checkout_page.pdf)
 
-*About Us Page*
-[About Us](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/Wireframes/about_us.pdf)
+*About Yoda Design*
+[About Us](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/Wireframes/about_yoda_design.pdf)
 
 **User and User Stories**
 
