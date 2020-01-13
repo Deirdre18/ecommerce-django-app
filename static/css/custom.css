@@ -1,4 +1,6 @@
-/*for some code on this page, I give credit to fellow student (Lucas Suarez) 'https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app' and I also give credit to Code Institute for their solutions on GitHub -
+/*for some code on this page, I give credit to fellow student (Lucas Suarez) 'https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app'*/
+
+/*I also give credit to Code Institute for their solutions on GitHub -
 https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app*/
 
 form {
@@ -187,12 +189,8 @@ caption p {
            }
        }
 
-
-
-
-
 /* ----------------------------------------------------------------------------------------
-                                        1. NavBar-Search CSS
+                                        NAVBAR
 --------------------------------------------------------------------------------------- */
 
        .navbar {

@@ -111,7 +111,7 @@ As per previous projects I completed, for direction in UX design I referred to w
 ### **Features left out which could be implemented in future versions**
 
 - Other features that could be implemented as listed here:
-    - I was unable to get user orders displayed from the backend on their profile page. I tried to get this working without success and plan to implement this in future versions of this website. I had hope that orders could be displayed on the Profile Page but at the time of submitting project, this wasn't achieved[Profile Page]()
+    - I was unable to get user orders displayed from the backend on their profile page. I tried to get this working without success and plan to implement this in future versions of this website. I had hope that orders could be displayed on the Profile Page but at the time of submitting project, this wasn't achieved[Profile Page](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/Wireframes/Profile%20Page.png)
     - Search functionality could be expanded to include the first three characters of a product when users search.
     - A share on social media button for individual products and a 'like' button could be added.
     - An incremental chart/user dashboard showing votes could be implemented to show which features are most popular.
