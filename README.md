@@ -3,7 +3,7 @@
 
 <h6>Deirdre Weldon</h6>
 
-<h1>Full Stack Framework Milestone - An ecommerce project using Django and Python</h1>
+<h1>Full Stack Framework Milestone - An e-commerce project using Django and Python</h1>
 
 [View Project](https://yoda-design.herokuapp.com/)
 
@@ -117,6 +117,7 @@ As per previous projects I completed, for direction in UX design I referred to w
     - An incremental chart/user dashboard showing votes could be implemented to show which features are most popular.
     - More products could be added and pagination used or 'more' button to view all products.
     - A 'down-voting' function, as currently there is only the option to up-vote on this website.
+    - Drop-down menu for users to add their own blogs and edit/delete.
 
 ## **Testing**
 
@@ -152,11 +153,11 @@ On having someone test the Yoda Design e-commerce app, it was found that if a us
 ### Manual testing of functionality
 Manually tested login, register, add products to cart, view blogs, profile and login status, search bar.
 
-- Login: Wrong username and password - This was tested successfully and user will get the message "Your username or password is incorrect".
+- Login(1): Wrong username and password - This was tested successfully and user will get the message "Your username or password is incorrect".
 
-- Login: Wrong username and right password - Tested successfully, this will result in same message as above.
+- Login(2): Wrong username and right password - Tested successfully, this will result in same message as above.
 
-- Login: Right username and wrong password - Tested successfully with same message as above.
+- Login(3): Right username and wrong password - Tested successfully with same message as above.
 
 - Log Out: Tested successfully, user will get message "You have succesfully logged out"
 
