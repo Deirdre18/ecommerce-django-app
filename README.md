@@ -131,6 +131,8 @@ On having someone test the Yoda Design e-commerce app, it was found that if a us
 ### Django Built-in Tests
 - I tested products app by running 'python3 manage.py test products', which successfully passed.
 
+- I also tested the checkout and accounts app by running 'python3 manage.py test checkout/accounts respectively', however I received the following error [checkout error](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/media/test_images/error%20in%20checkout%20tests.png)
+
 <table>
     <tr>
         <th>PRODUCTS APP</th>
@@ -143,8 +145,6 @@ On having someone test the Yoda Design e-commerce app, it was found that if a us
         <td>1 Test failed *see error msg below*</td>
     </tr>
 </table>
-
-- I also tested checkout app by running 'python3 manage.py test checkout', however received following [checkout error](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/media/test_images/error%20in%20checkout%20tests.png)
 
 ### Travis Testing
 - I used [Travis Continuous Integration](https://travis-ci.org/) and all tests passed, since I first started this project. The Travis link is at the top of this README. I have found it very useful in aligning integrated testing during development.
@@ -179,6 +179,8 @@ Manually tested login, register, add products to cart, view blogs, profile and l
 ![PostgresSQL schemata tables](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/postgress%20data_schemata.png)
 
 ![PostgresSQL schemata tables1](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/postgress%20data_schemata1.png)
+
+[PostgresSQL schemata tables1]
 
 ### **Technologies used includes:**
 
@@ -314,6 +316,11 @@ I referred to the following websites for project images:-
 - [Yoda gifts on Amazon](https://www.amazon.com/slp/yoda-gifts/7hw5autakufk8oo)
 
 - [StarWars Products](https://www.liveabout.com/yoda-in-star-wars-2957947)
+
+- [Django Documentation](https://docs.djangoproject.com)
+
+- [Testing Error Messages](https://stackoverflow.com/questions/14186055/django-test-app-error-got-an-error-creating-the-test-database-permission-deni)
+
 
 ## Licence
 Copyright (c) Deirdre Weldon
