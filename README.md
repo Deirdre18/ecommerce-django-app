@@ -274,7 +274,7 @@ The steps I took to develop this project are as follows:-
 33) add Procfile so that server on Heroku uses Python and Django
 34) to use postgress db, add it in heroku dashboard and update code
 
-The above code can be run using 'python3 manage.py runserve'. If deploying for production, please make sure debug=false and when testing turn debug=true and uncomment line 128 in settings.py file. In addition for every installation update requirements.txt (pip3 freeze > requirements.txt). After creating new apps (home, search, products, posts, etc), always migrate usiing python3 manage.py makemigrations and python3 manage.py migrate.**
+The above code can be run using 'python3 manage.py runserve'. If deploying for production, please make sure debug=false (and uncomment line 128 in settings.py) and when testing turn debug=true (and comment out line 128). In addition for every installation update requirements.txt (pip3 freeze > requirements.txt). After creating new apps (home, search, products, posts, etc), always migrate usiing python3 manage.py makemigrations and python3 manage.py migrate.**
 
 ## **Difficulties I came across**
 
