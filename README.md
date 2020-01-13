@@ -111,7 +111,7 @@ As per previous projects I completed, for direction in UX design I referred to w
 ### **Features left out which could be implemented in future versions**
 
 - Other features that could be implemented as listed here:
-    - I was unable to get user orders displayed from the backend on their profile page. I tried to get this working without success and plan to implement this in future versions of this website.
+    - I was unable to get user orders displayed from the backend on their profile page. I tried to get this working without success and plan to implement this in future versions of this website. I had hope that orders could be displayed on the Profile Page but at the time of submitting project, this wasn't achieved[Profile Page]()
     - Search functionality could be expanded to include the first three characters of a product when users search.
     - A share on social media button for individual products and a 'like' button could be added.
     - An incremental chart/user dashboard showing votes could be implemented to show which features are most popular.
@@ -170,7 +170,7 @@ Manually tested login, register, add products to cart, view blogs, profile and l
 - Used Chrome and Firefox developer tools to view app in responsive mode and debug throughout developing this project. I tested this project on iPhone 6/7/8, Galaxy S9/S9+, iPad, iPhone 6/7/8 Plus, iPhone X/XS, Kindle Fire HDX, LG Optimus L70, MS Luma 550, MS Lumia 950, Nexus10, Laptop HiDPl, Laptop MDPl, Pixel2, Pixel2 XL.
 
 ### Testing STRIPE
-- Tested STRIP payments on checkout using testing card 42424242424242 CVV 111 (or any 3 digits). This worked and got message saying "You have successfully paid". On trying other varients of testing card number I got some interesting messages. Instead of inputting the 16 digit test card number, if I put in the same numbers but had 19 digits, I got no messages displayed but got email from STRIPE saying that the charging  API used for testing purposes doesn't cover SCA (strong customer authentication) and as such testing doesn't support SCA or 2-factor authentication. The STRIPE developers website is here [STRIPE FOR DEVELOPERS](https://stripe.dev/)
+- Tested STRIP payments on checkout using testing card 42424242424242 CVV 111 (or any 3 digits). This worked and got message saying [You have successfully paid](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/media/images/Stripe%20Successful%20payment%20message.png). On trying other varients of testing card number I got some interesting messages. Instead of inputting the 16 digit test card number, if I put in the same numbers but had 19 digits, I got no messages displayed but got email from STRIPE saying that the charging  API used for testing purposes doesn't cover SCA (strong customer authentication) and as such testing doesn't support SCA or 2-factor authentication. The STRIPE developers website is here [STRIPE FOR DEVELOPERS](https://stripe.dev/)
 
 ## **Databse schema**:
 
@@ -181,6 +181,10 @@ Manually tested login, register, add products to cart, view blogs, profile and l
 ![PostgresSQL schemata tables1](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/media/database_images/postgress%20data_schemata1.png)
 
 [PostgresSQL schemata tables1](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/media/database_images/suggestions_model.png)
+
+[Products_Product Table](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/media/database_images/products_product%20table.png)
+
+Other queries which could be run in postgresSQL db on Heroku (DataClips) are SELECT * FROM checkout_order; SELECT * FROM checkout_orderlineitem; SELECT * FROM auth_user;SELECT * FROM auth_group_permissions;
 
 ### **Technologies used includes:**
 
