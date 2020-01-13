@@ -176,11 +176,11 @@ Manually tested login, register, add products to cart, view blogs, profile and l
 
 ### Results from Postgress Database Schema Explorer in heroku
 
-![PostgresSQL schemata tables](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/postgress%20data_schemata.png)
+![PostgresSQL schemata tables](hhttps://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/media/database_images/postgress%20data_schemata.png)
 
-![PostgresSQL schemata tables1](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/UX%20Design/postgress%20data_schemata1.png)
+![PostgresSQL schemata tables1](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/media/database_images/postgress%20data_schemata1.png)
 
-[PostgresSQL schemata tables1]
+[PostgresSQL schemata tables1](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/media/database_images/suggestions_model.png)
 
 ### **Technologies used includes:**
 
@@ -319,7 +319,11 @@ I referred to the following websites for project images:-
 
 - [Django Documentation](https://docs.djangoproject.com)
 
+- [Django Testing](https://docs.djangoproject.com/en/3.0/topics/testing/overview/)
+
 - [Testing Error Messages](https://stackoverflow.com/questions/14186055/django-test-app-error-got-an-error-creating-the-test-database-permission-deni)
+
+- [Heroku Postgress Querying](https://devcenter.heroku.com/articles/heroku-postgresql)
 
 
 ## Licence
