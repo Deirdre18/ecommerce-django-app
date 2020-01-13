@@ -129,16 +129,22 @@ On further testing I worked out a way to test in debug mode, whilst commenting o
 On having someone test the Yoda Design e-commerce app, it was found that if a user tried to add an item to a shopping cart, without selecting a quantity, it came up with a 500 server error, assumably as no item was selected and an 'integer' as required.
 
 ### Django Built-in Tests
-- I tested products by running 'python3 manage.py test products', which successfully passed.
+- I tested products app by running 'python3 manage.py test products', which successfully passed.
 
 <table>
     <tr>
         <th>PRODUCTS APP</th>
+        <th>CHECKOUT APP</th>
+        <th>ACCOUNTS APP</th>
     </tr>
     <tr>
-        <td>1 Test</td>
+        <td>1 Test passed</td>
+        <td>3 Tests failed *see error msg below*</td>
+        <td>1 Test failed *see error msg below*</td>
     </tr>
 </table>
+
+- I also tested checkout app by running 'python3 manage.py test checkout', however received following [checkout error](https://github.com/Deirdre18/yoda-design-ecommerce-app-Milestone4-project/blob/master/media/test_images/error%20in%20checkout%20tests.png)
 
 ### Travis Testing
 - I used [Travis Continuous Integration](https://travis-ci.org/) and all tests passed, since I first started this project. The Travis link is at the top of this README. I have found it very useful in aligning integrated testing during development.
