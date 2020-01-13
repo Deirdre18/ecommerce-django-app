@@ -111,6 +111,7 @@ As per previous projects I completed, for direction in UX design I referred to w
 ### **Features left out which could be implemented in future versions**
 
 - Other features that could be implemented as listed here:
+    - I was unable to get user orders displayed from the backend on their profile page. I tried to get this working without success and plan to implement this in future versions of this website.
     - Search functionality could be expanded to include the first three characters of a product when users search.
     - A share on social media button for individual products and a 'like' button could be added.
     - An incremental chart/user dashboard showing votes could be implemented to show which features are most popular.
